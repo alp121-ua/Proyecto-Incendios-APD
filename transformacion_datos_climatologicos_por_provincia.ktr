@@ -563,8 +563,8 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <head_name>Append streams</head_name>
-    <tail_name>Append streams 2</tail_name>
+    <head_name>Append streams 2</head_name>
+    <tail_name>Append streams</tail_name>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -746,7 +746,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\hugou\OneDrive\UNIVERSIDAD\3ER_CURSO\PRIMER_CUATRI\ADQ_DATOS\PRACTICAS\PROYECTO\Proyecto-Incendios-APD\data\datos_acoruna_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_acoruna_unidos.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -875,7 +875,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\hugou\OneDrive\UNIVERSIDAD\3ER_CURSO\PRIMER_CUATRI\ADQ_DATOS\PRACTICAS\PROYECTO\Proyecto-Incendios-APD\data\datos_lugo_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_lugo_unidos.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1004,7 +1004,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\hugou\OneDrive\UNIVERSIDAD\3ER_CURSO\PRIMER_CUATRI\ADQ_DATOS\PRACTICAS\PROYECTO\Proyecto-Incendios-APD\data\datos_ourense_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_ourense_unidos.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1133,7 +1133,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\hugou\OneDrive\UNIVERSIDAD\3ER_CURSO\PRIMER_CUATRI\ADQ_DATOS\PRACTICAS\PROYECTO\Proyecto-Incendios-APD\data\datos_pontevedra_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_pontevedra_unidos.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1262,7 +1262,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
+    <separator>,</separator>
     <enclosure>"</enclosure>
     <enclosure_forced>N</enclosure_forced>
     <enclosure_fix_disabled>N</enclosure_fix_disabled>
@@ -1276,7 +1276,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/data/datos_climatologicos_por_provincia</name>
+      <name>${Internal.Entry.Current.Directory}/datos_climatologicos_por_provincia</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
