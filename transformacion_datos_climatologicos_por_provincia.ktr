@@ -746,7 +746,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${Internal.Entry.Current.Directory}/data/datos_acoruna_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_acoruna_unidos_sin_duplicados.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -875,7 +875,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${Internal.Entry.Current.Directory}/data/datos_lugo_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_lugo_unidos_sin_duplicados.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1133,7 +1133,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${Internal.Entry.Current.Directory}/data/datos_pontevedra_unidos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_pontevedra_unidos_sin_duplicados.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1276,7 +1276,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/datos_climatologicos_por_provincia</name>
+      <name>${Internal.Entry.Current.Directory}/data/datos_climatologicos_por_provincia</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1394,31 +1394,24 @@
     <fields>
       <field>
         <name>Fecha</name>
-        <rename/>
       </field>
       <field>
         <name>idProvincia</name>
-        <rename/>
       </field>
       <field>
         <name>Temperatura_Maxima</name>
-        <rename/>
       </field>
       <field>
         <name>Temperatura_Minima</name>
-        <rename/>
       </field>
       <field>
         <name>Racha_Max_Km_h</name>
-        <rename/>
       </field>
       <field>
         <name>Velocidad_Media_Km_h</name>
-        <rename/>
       </field>
       <field>
         <name>Precipitacion_lm2</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>

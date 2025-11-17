@@ -2,8 +2,8 @@ import pandas as pd
 
 # Leer CSV interpretando '' como NaN
 df = pd.read_csv(
-    './data/datos_climatologicos_por_provincia.csv',
-    delimiter=';',
+    './data/datos_lugo_unidos_sin_duplicados.csv',
+    delimiter=',',
     na_values=['', ' ', 'NA', 'null']
 )
 
