@@ -438,13 +438,8 @@
   </notepads>
   <order>
     <hop>
-      <from>CSV file input</from>
+      <from>CSV fires_all</from>
       <to>Filtrar filas</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Selecciona/Renombra valores</from>
-      <to>Text file output (Legacy)</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -452,9 +447,49 @@
       <to>Selecciona/Renombra valores</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>CSV CLIMA</from>
+      <to>Ordenar filas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Selecciona/Renombra valores</from>
+      <to>Multiway merge join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar filas</from>
+      <to>Multiway merge join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Multiway merge join</from>
+      <to>Mapeo de valores intencionado o no</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>CSV provincias</from>
+      <to>Búsqueda en flujo de datos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Mapeo de valores intencionado o no</from>
+      <to>Búsqueda en flujo de datos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Búsqueda en flujo de datos</from>
+      <to>Selecciona/Renombra valores 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Selecciona/Renombra valores 2</from>
+      <to>Salida Fichero de Texto</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <step>
-    <name>CSV file input</name>
+    <name>CSV CLIMA</name>
     <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -464,7 +499,114 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\pausa\OneDrive\Documentos\5th-4tri-IA\preparacion-datos\Proyecto-Incendios-APD\data\fires-all.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/datos_climatologicos_por_provincia.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding/>
+    <fields>
+      <field>
+        <name>Fecha</name>
+        <type>Date</type>
+        <format>yyyy-MM-dd</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>idProvincia</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Temperatura_Maxima</name>
+        <type>BigNumber</type>
+        <format>#.#</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Temperatura_Minima</name>
+        <type>BigNumber</type>
+        <format>#.#</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Velocidad_Media_Km_h</name>
+        <type>BigNumber</type>
+        <format>#.##</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>5</length>
+        <precision>2</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Precipitacion_lm2</name>
+        <type>BigNumber</type>
+        <format>#.#</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CSV fires_all</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>${Internal.Entry.Current.Directory}/data/fires-all.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -514,8 +656,8 @@
       </field>
       <field>
         <name>lat</name>
-        <type>Boolean</type>
-        <format/>
+        <type>Number</type>
+        <format>0.000000</format>
         <currency>EUR</currency>
         <decimal>.</decimal>
         <group>,</group>
@@ -525,8 +667,8 @@
       </field>
       <field>
         <name>lng</name>
-        <type>Boolean</type>
-        <format/>
+        <type>Number</type>
+        <format>0.000000</format>
         <currency>EUR</currency>
         <decimal>.</decimal>
         <group>,</group>
@@ -833,14 +975,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>368</xloc>
+      <xloc>400</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Text file output (Legacy)</name>
-    <type>TextFileOutputLegacy</type>
+    <name>Multiway merge join</name>
+    <type>MultiwayMergeJoin</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -849,38 +991,95 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>UTF-8</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>${Internal.Entry.Current.Directory}/incendios-filtrado</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-      <is_command>N</is_command>
-    </file>
+    <join_type>INNER</join_type>
+    <step0>Selecciona/Renombra valores</step0>
+    <step1>Ordenar filas</step1>
+    <number_input>2</number_input>
+    <keys>
+      <key>fecha,idprovincia</key>
+      <key>Fecha,idProvincia</key>
+    </keys>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar filas</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
     <fields>
+      <field>
+        <name>Fecha</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>idProvincia</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Temperatura_Maxima</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Temperatura_Minima</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Velocidad_Media_Km_h</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Precipitacion_lm2</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -891,8 +1090,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
-      <yloc>96</yloc>
+      <xloc>416</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -909,10 +1108,6 @@
     </partitioning>
     <fields>
       <field>
-        <name>id</name>
-        <rename/>
-      </field>
-      <field>
         <name>superficie</name>
         <rename/>
       </field>
@@ -921,15 +1116,15 @@
         <rename/>
       </field>
       <field>
+        <name>id</name>
+        <rename/>
+      </field>
+      <field>
         <name>lat</name>
         <rename/>
       </field>
       <field>
         <name>lng</name>
-        <rename/>
-      </field>
-      <field>
-        <name>latlng_explicit</name>
         <rename/>
       </field>
       <field>
@@ -953,7 +1148,31 @@
         <rename/>
       </field>
       <field>
+        <name>muertos</name>
+        <rename/>
+      </field>
+      <field>
+        <name>heridos</name>
+        <rename/>
+      </field>
+      <field>
+        <name>time_ctrl</name>
+        <rename/>
+      </field>
+      <field>
         <name>time_ext</name>
+        <rename/>
+      </field>
+      <field>
+        <name>personal</name>
+        <rename/>
+      </field>
+      <field>
+        <name>medios</name>
+        <rename/>
+      </field>
+      <field>
+        <name>gastos</name>
         <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
@@ -967,14 +1186,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
+      <xloc>560</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Microsoft Excel input</name>
-    <type>ExcelInput</type>
+    <name>Mapeo de valores intencionado o no</name>
+    <type>ValueMapper</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -983,51 +1202,15 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <header>Y</header>
-    <noempty>Y</noempty>
-    <stoponempty>N</stoponempty>
-    <filefield/>
-    <sheetfield/>
-    <sheetrownumfield/>
-    <rownumfield/>
-    <sheetfield/>
-    <filefield/>
-    <limit>0</limit>
-    <encoding/>
-    <add_to_result_filenames>Y</add_to_result_filenames>
-    <accept_filenames>N</accept_filenames>
-    <accept_field/>
-    <accept_stepname/>
-    <file>
-      <name/>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-    </file>
+    <field_to_use>causa</field_to_use>
+    <target_field>intencionado</target_field>
+    <non_match_default>false</non_match_default>
     <fields>
+      <field>
+        <source_value>4</source_value>
+        <target_value>true</target_value>
+      </field>
     </fields>
-    <sheets>
-    </sheets>
-    <strict_types>N</strict_types>
-    <error_ignored>N</error_ignored>
-    <error_line_skipped>N</error_line_skipped>
-    <bad_line_files_destination_directory/>
-    <bad_line_files_extension>warning</bad_line_files_extension>
-    <error_line_files_destination_directory/>
-    <error_line_files_extension>error</error_line_files_extension>
-    <line_number_files_destination_directory/>
-    <line_number_files_extension>line</line_number_files_extension>
-    <shortFileFieldName/>
-    <pathFieldName/>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
-    <uriNameFieldName/>
-    <rootUriNameFieldName/>
-    <extensionFieldName/>
-    <sizeFieldName/>
-    <spreadsheet_type>JXL</spreadsheet_type>
-    <password>Encrypted </password>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1037,8 +1220,308 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>208</xloc>
-      <yloc>224</yloc>
+      <xloc>736</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CSV provincias</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>${Internal.Entry.Current.Directory}/data/eell-extra-codes-regions.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding/>
+    <fields>
+      <field>
+        <name>idprovincia</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>provincia</name>
+        <type>String</type>
+        <format/>
+        <currency>EUR</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Búsqueda en flujo de datos</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <from>CSV provincias</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>idprovincia</name>
+        <field>idprovincia</field>
+      </key>
+      <value>
+        <name>provincia</name>
+        <rename>provincia</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Selecciona/Renombra valores 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>id</name>
+        <rename/>
+      </field>
+      <field>
+        <name>fecha</name>
+        <rename/>
+      </field>
+      <field>
+        <name>superficie</name>
+        <rename/>
+      </field>
+      <field>
+        <name>lat</name>
+        <rename/>
+      </field>
+      <field>
+        <name>lng</name>
+        <rename/>
+      </field>
+      <field>
+        <name>municipio</name>
+        <rename/>
+      </field>
+      <field>
+        <name>provincia</name>
+        <rename/>
+      </field>
+      <field>
+        <name>muertos</name>
+        <rename/>
+      </field>
+      <field>
+        <name>heridos</name>
+        <rename/>
+      </field>
+      <field>
+        <name>time_ctrl</name>
+        <rename/>
+      </field>
+      <field>
+        <name>time_ext</name>
+        <rename/>
+      </field>
+      <field>
+        <name>personal</name>
+        <rename/>
+      </field>
+      <field>
+        <name>medios</name>
+        <rename/>
+      </field>
+      <field>
+        <name>gastos</name>
+        <rename/>
+      </field>
+      <field>
+        <name>intencionado</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Temperatura_Maxima</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Temperatura_Minima</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Velocidad_Media_Km_h</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Precipitacion_lm2</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>intencionado</name>
+        <rename>intencionado</rename>
+        <type>Boolean</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>fecha</name>
+        <rename>fecha</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Salida Fichero de Texto</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/data/fires_all_transformado</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1280</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
