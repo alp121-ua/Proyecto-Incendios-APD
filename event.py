@@ -82,6 +82,11 @@ for _, row in df_incendios.iterrows():
     # 3. Sanitizar datos
     fecha_sanitizada = sanitize_date(row['fecha'])
     
+    
+    if row['intencionado']:
+        inten = 'Intencionado'
+    else:
+        inten = 'Causas naturales'
     # Añadimos el slug a la lista de municipios a definir
     municipios_a_definir.add((slug_municipio, row['municipio']))
     
@@ -96,12 +101,12 @@ for _, row in df_incendios.iterrows():
         schema:location "{row['municipio']}";
         schema:identifier "{row['id']}" ;
         schema:startDate "{row['fecha']}";
+        schema:description "{inten}";
         schema:geo [
             a schema:GeoCoordinates ;
             schema:latitude "{row['lat']}";
             schema:longitude "{row['lng']}"
         ] 
-
     """
     RDF_INCENDIOS += ENTRY
 
