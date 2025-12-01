@@ -488,13 +488,13 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>limpiar strings</from>
+      <from>limpiar strings y añadir estacion</from>
       <to>Selecciona/Renombra valores 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>BINNING SUPERFICIE</from>
-      <to>limpiar strings</to>
+      <to>limpiar strings y añadir estacion</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -1311,8 +1311,20 @@
         <precision>-1</precision>
       </field>
       <field>
+        <name>estacion</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>superficie</name>
-        <type>Number</type>
+        <type>Integer</type>
         <format>#.################</format>
         <currency/>
         <decimal>.</decimal>
@@ -1320,7 +1332,7 @@
         <nullif/>
         <trim_type>none</trim_type>
         <length>10</length>
-        <precision>2</precision>
+        <precision>0</precision>
       </field>
       <field>
         <name>superficie_bin</name>
@@ -1536,7 +1548,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1568</xloc>
+      <xloc>1664</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1555,54 +1567,71 @@
     <fields>
       <field>
         <name>superficie</name>
+        <rename/>
       </field>
       <field>
         <name>fecha</name>
+        <rename/>
       </field>
       <field>
         <name>id</name>
+        <rename/>
       </field>
       <field>
         <name>lat</name>
+        <rename/>
       </field>
       <field>
         <name>lng</name>
+        <rename/>
       </field>
       <field>
         <name>idprovincia</name>
+        <rename/>
       </field>
       <field>
         <name>municipio</name>
+        <rename/>
       </field>
       <field>
         <name>causa</name>
+        <rename/>
       </field>
       <field>
         <name>causa_supuesta</name>
+        <rename/>
       </field>
       <field>
         <name>causa_desc</name>
+        <rename/>
       </field>
       <field>
         <name>muertos</name>
+        <rename/>
       </field>
       <field>
         <name>heridos</name>
+        <rename/>
       </field>
       <field>
         <name>time_ctrl</name>
+        <rename/>
       </field>
       <field>
         <name>time_ext</name>
+        <rename/>
       </field>
       <field>
         <name>personal</name>
+        <rename/>
       </field>
       <field>
         <name>medios</name>
+        <rename/>
       </field>
       <field>
         <name>gastos</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1638,6 +1667,10 @@
       </field>
       <field>
         <name>fecha</name>
+        <rename/>
+      </field>
+      <field>
+        <name>estacion</name>
         <rename/>
       </field>
       <field>
@@ -1731,12 +1764,12 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>fecha</name>
-        <rename>fecha</rename>
-        <type>Date</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <name>superficie</name>
+        <rename>superficie</rename>
+        <type>Integer</type>
+        <length>10</length>
+        <precision>2</precision>
+        <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
         <date_format_timezone/>
@@ -1748,12 +1781,12 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>superficie</name>
-        <rename>superficie</rename>
-        <type>Integer</type>
-        <length>10</length>
-        <precision>2</precision>
-        <conversion_mask/>
+        <name>fecha</name>
+        <rename>fecha</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
         <date_format_timezone/>
@@ -1774,13 +1807,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1360</xloc>
+      <xloc>1488</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>limpiar strings</name>
+    <name>limpiar strings y añadir estacion</name>
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
@@ -1813,9 +1846,34 @@ function limpiar(texto) {
   return texto.trim();
 }
 
+function crear_estacion(fecha) {
+var mes = fecha.getMonth() + 1;   // 1-12
+var dia = fecha.getDate();        // 1-31
+var estacion = "";
+
+// PRIMAVERA: desde 20 marzo hasta 20 junio
+if ((mes == 3 &amp;&amp; dia >= 20) || (mes > 3 &amp;&amp; mes &lt; 6) || (mes == 6 &amp;&amp; dia &lt; 21)) {
+    estacion = "PRIMAVERA";
+
+// VERANO: desde 21 junio hasta 22 septiembre
+} else if ((mes == 6 &amp;&amp; dia >= 21) || (mes > 6 &amp;&amp; mes &lt; 9) || (mes == 9 &amp;&amp; dia &lt; 23)) {
+    estacion = "VERANO";
+
+// OTOÑO: desde 23 septiembre hasta 20 diciembre
+} else if ((mes == 9 &amp;&amp; dia >= 23) || (mes > 9 &amp;&amp; mes &lt; 12) || (mes == 12 &amp;&amp; dia &lt; 21)) {
+    estacion = "OTOÑO";
+
+// INVIERNO: desde 21 diciembre hasta 19 marzo
+} else {
+    estacion = "INVIERNO";
+}
+return estacion
+}
+
 clean_municipio = limpiar(municipio);
 clean_provincia = limpiar(provincia);
-clean_superficie_bin = limpiar(superficie_bin)</jsScript_script>
+clean_superficie_bin = limpiar(superficie_bin)
+estacion = crear_estacion(fecha)</jsScript_script>
       </jsScript>
     </jsScripts>
     <fields>
@@ -1843,6 +1901,14 @@ clean_superficie_bin = limpiar(superficie_bin)</jsScript_script>
         <precision>-1</precision>
         <replace>Y</replace>
       </field>
+      <field>
+        <name>estacion</name>
+        <rename>estacion</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1853,7 +1919,7 @@ clean_superficie_bin = limpiar(superficie_bin)</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
+      <xloc>1280</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
