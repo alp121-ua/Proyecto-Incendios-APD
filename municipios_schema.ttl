@@ -1,0 +1,2746 @@
+@prefix :       <http://127.0.0.1:3333/> .
+@prefix ex:     <http://example/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://example/place/0>
+    rdf:type schema:Place ;
+    schema:name "ABADIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.34660661778932 ;
+        schema:longitude -7.4996355740804335
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.34660661778932,-7.4996355740804335" .
+
+<http://example/place/1>
+    rdf:type schema:Place ;
+    schema:name "ABEGONDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.20414918365819 ;
+        schema:longitude -8.306368412593898
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.20414918365819,-8.306368412593898" .
+
+<http://example/place/2>
+    rdf:type schema:Place ;
+    schema:name "AGOLADA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.78107643166891 ;
+        schema:longitude -8.052195603496193
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.78107643166891,-8.052195603496193" .
+
+<http://example/place/3>
+    rdf:type schema:Place ;
+    schema:name "ALFOZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.53135915890202 ;
+        schema:longitude -7.424089622381545
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.53135915890202,-7.424089622381545" .
+
+<http://example/place/4>
+    rdf:type schema:Place ;
+    schema:name "ALLARIZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.20137238652676 ;
+        schema:longitude -7.813136608443225
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.20137238652676,-7.813136608443225" .
+
+<http://example/place/5>
+    rdf:type schema:Place ;
+    schema:name "AMES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.88559213318949 ;
+        schema:longitude -8.61949934738511
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.88559213318949,-8.61949934738511" .
+
+<http://example/place/6>
+    rdf:type schema:Place ;
+    schema:name "AMOEIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.39278944003297 ;
+        schema:longitude -7.912417854827376
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.39278944003297,-7.912417854827376" .
+
+<http://example/place/7>
+    rdf:type schema:Place ;
+    schema:name "ANTAS DE ULLA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.76834429765943 ;
+        schema:longitude -7.907913426075367
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.76834429765943,-7.907913426075367" .
+
+<http://example/place/8>
+    rdf:type schema:Place ;
+    schema:name "ARANGA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.23395773717049 ;
+        schema:longitude -8.029453694848854
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.23395773717049,-8.029453694848854" .
+
+<http://example/place/9>
+    rdf:type schema:Place ;
+    schema:name "ARBO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.13384928653794 ;
+        schema:longitude -8.322471781564278
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.13384928653794,-8.322471781564278" .
+
+<http://example/place/10>
+    rdf:type schema:Place ;
+    schema:name "ARES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.45228172721681 ;
+        schema:longitude -8.291761140709157
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.45228172721681,-8.291761140709157" .
+
+<http://example/place/11>
+    rdf:type schema:Place ;
+    schema:name "ARTEIXO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.31067431136755 ;
+        schema:longitude -8.49972518388418
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.31067431136755,-8.49972518388418" .
+
+<http://example/place/12>
+    rdf:type schema:Place ;
+    schema:name "ARZUA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.93015325126144 ;
+        schema:longitude -8.146579555549492
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.93015325126144,-8.146579555549492" .
+
+<http://example/place/13>
+    rdf:type schema:Place ;
+    schema:name "AVION" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.37979923051917 ;
+        schema:longitude -8.271287375121753
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.37979923051917,-8.271287375121753" .
+
+<http://example/place/14>
+    rdf:type schema:Place ;
+    schema:name "BAIONA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.109957714376414 ;
+        schema:longitude -8.856023407585159
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.109957714376414,-8.856023407585159" .
+
+<http://example/place/15>
+    rdf:type schema:Place ;
+    schema:name "BALEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.03910507036433 ;
+        schema:longitude -7.188094272615517
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.03910507036433,-7.188094272615517" .
+
+<http://example/place/16>
+    rdf:type schema:Place ;
+    schema:name "BALTAR" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.95719265192343 ;
+        schema:longitude -7.754097237535458
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.95719265192343,-7.754097237535458" .
+
+<http://example/place/17>
+    rdf:type schema:Place ;
+    schema:name "BANDE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.045648449944025 ;
+        schema:longitude -7.968985314757861
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.045648449944025,-7.9689853147578615" .
+
+<http://example/place/18>
+    rdf:type schema:Place ;
+    schema:name "BANOS DE MOLGAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.23246801525441 ;
+        schema:longitude -7.675654609384474
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.23246801525441,-7.675654609384474" .
+
+<http://example/place/19>
+    rdf:type schema:Place ;
+    schema:name "BARALLA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.89868181044194 ;
+        schema:longitude -7.244584608137326
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.89868181044194,-7.244584608137326" .
+
+<http://example/place/20>
+    rdf:type schema:Place ;
+    schema:name "BARBADAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.31918965756526 ;
+        schema:longitude -7.904333882479275
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.31918965756526,-7.904333882479275" .
+
+<http://example/place/21>
+    rdf:type schema:Place ;
+    schema:name "BARREIROS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.49176633085179 ;
+        schema:longitude -7.195818122421446
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.49176633085179,-7.195818122421446" .
+
+<http://example/place/22>
+    rdf:type schema:Place ;
+    schema:name "BARRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.489334039219386 ;
+        schema:longitude -8.648994680287903
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.489334039219386,-8.648994680287903" .
+
+<http://example/place/23>
+    rdf:type schema:Place ;
+    schema:name "BEADE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.33023271265802 ;
+        schema:longitude -8.134901863357541
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.33023271265802,-8.134901863357541" .
+
+<http://example/place/24>
+    rdf:type schema:Place ;
+    schema:name "BEARIZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.48253638312729 ;
+        schema:longitude -8.295266560939169
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.48253638312729,-8.295266560939169" .
+
+<http://example/place/25>
+    rdf:type schema:Place ;
+    schema:name "BECERREA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.909324184298896 ;
+        schema:longitude -7.127708371222524
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.909324184298896,-7.127708371222524" .
+
+<http://example/place/26>
+    rdf:type schema:Place ;
+    schema:name "BEGONTE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.14745712226887 ;
+        schema:longitude -7.67423193559465
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.14745712226887,-7.6742319355946504" .
+
+<http://example/place/27>
+    rdf:type schema:Place ;
+    schema:name "BERGONDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.31744223644728 ;
+        schema:longitude -8.267161517211667
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.31744223644728,-8.267161517211667" .
+
+<http://example/place/28>
+    rdf:type schema:Place ;
+    schema:name "BETANZOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.27152808302045 ;
+        schema:longitude -8.23292261291753
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.27152808302045,-8.23292261291753" .
+
+<http://example/place/29>
+    rdf:type schema:Place ;
+    schema:name "BOBORAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.44421306903402 ;
+        schema:longitude -8.16810828243001
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.44421306903402,-8.16810828243001" .
+
+<http://example/place/30>
+    rdf:type schema:Place ;
+    schema:name "BOIMORTO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.01054061204069 ;
+        schema:longitude -8.119316502784153
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.01054061204069,-8.119316502784153" .
+
+<http://example/place/31>
+    rdf:type schema:Place ;
+    schema:name "BOIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.70112038923246 ;
+        schema:longitude -8.887730976324832
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.70112038923246,-8.887730976324832" .
+
+<http://example/place/32>
+    rdf:type schema:Place ;
+    schema:name "BOQUEIXON-CASANOVA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.83141446239088 ;
+        schema:longitude -8.411724134380563
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.831414462390875,-8.411724134380563" .
+
+<http://example/place/33>
+    rdf:type schema:Place ;
+    schema:name "BOVEDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.64674684089045 ;
+        schema:longitude -7.492192020972682
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.646746840890444,-7.492192020972682" .
+
+<http://example/place/34>
+    rdf:type schema:Place ;
+    schema:name "BRION" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.84326997955816 ;
+        schema:longitude -8.714986252157606
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.84326997955816,-8.714986252157606" .
+
+<http://example/place/35>
+    rdf:type schema:Place ;
+    schema:name "BUEU" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.32681648421821 ;
+        schema:longitude -8.800001175397904
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.32681648421821,-8.800001175397904" .
+
+<http://example/place/36>
+    rdf:type schema:Place ;
+    schema:name "BURELA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.66192928341184 ;
+        schema:longitude -7.380150294721171
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.66192928341184,-7.380150294721171" .
+
+<http://example/place/37>
+    rdf:type schema:Place ;
+    schema:name "CABANA DE BERGANTINOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.19599260970328 ;
+        schema:longitude -8.865120669232981
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.19599260970328,-8.865120669232981" .
+
+<http://example/place/38>
+    rdf:type schema:Place ;
+    schema:name "CABANAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.45969274089288 ;
+        schema:longitude -8.214522223132516
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.459692740892876,-8.214522223132516" .
+
+<http://example/place/39>
+    rdf:type schema:Place ;
+    schema:name "CALDAS DE REIS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.61098080767344 ;
+        schema:longitude -8.673785946399997
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.610980807673435,-8.673785946399997" .
+
+<http://example/place/40>
+    rdf:type schema:Place ;
+    schema:name "CALVOS DE RANDIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.95638425678369 ;
+        schema:longitude -7.862101085782855
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.95638425678369,-7.862101085782855" .
+
+<http://example/place/41>
+    rdf:type schema:Place ;
+    schema:name "CAMARINAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.16835673523996 ;
+        schema:longitude -9.101611731264454
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.16835673523996,-9.101611731264454" .
+
+<http://example/place/42>
+    rdf:type schema:Place ;
+    schema:name "CAMBADOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.503891115290784 ;
+        schema:longitude -8.79723639053952
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.503891115290784,-8.79723639053952" .
+
+<http://example/place/43>
+    rdf:type schema:Place ;
+    schema:name "CAMBRE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.276936598368174 ;
+        schema:longitude -8.325096569959669
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.276936598368174,-8.325096569959669" .
+
+<http://example/place/44>
+    rdf:type schema:Place ;
+    schema:name "CAMPO LAMEIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.51799906527108 ;
+        schema:longitude -8.546637393045996
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.51799906527108,-8.546637393045996" .
+
+<http://example/place/45>
+    rdf:type schema:Place ;
+    schema:name "CANGAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.27864140665148 ;
+        schema:longitude -8.803129031449284
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.27864140665148,-8.803129031449284" .
+
+<http://example/place/46>
+    rdf:type schema:Place ;
+    schema:name "CARBALLEDA DE AVIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.32457110767516 ;
+        schema:longitude -8.182285427081544
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.324571107675155,-8.182285427081544" .
+
+<http://example/place/47>
+    rdf:type schema:Place ;
+    schema:name "CARBALLEDA DE VALDEORRAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.35826902261327 ;
+        schema:longitude -6.923134868535652
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.35826902261327,-6.923134868535652" .
+
+<http://example/place/48>
+    rdf:type schema:Place ;
+    schema:name "CARBALLEDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.526947549011545 ;
+        schema:longitude -7.788470680023216
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.526947549011545,-7.788470680023216" .
+
+<http://example/place/49>
+    rdf:type schema:Place ;
+    schema:name "CARBALLO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.20199355325462 ;
+        schema:longitude -8.664222260209778
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.20199355325462,-8.664222260209778" .
+
+<http://example/place/50>
+    rdf:type schema:Place ;
+    schema:name "CARINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.7497396316899 ;
+        schema:longitude -7.879165114803612
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.7497396316899,-7.879165114803612" .
+
+<http://example/place/51>
+    rdf:type schema:Place ;
+    schema:name "CARNOTA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.85073644466812 ;
+        schema:longitude -9.09045379049804
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.85073644466812,-9.090453790498039" .
+
+<http://example/place/52>
+    rdf:type schema:Place ;
+    schema:name "CARRAL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.20629034648925 ;
+        schema:longitude -8.358500586794339
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.206290346489254,-8.358500586794339" .
+
+<http://example/place/53>
+    rdf:type schema:Place ;
+    schema:name "CARTELLE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.23760542226177 ;
+        schema:longitude -8.010245464706086
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.23760542226177,-8.010245464706086" .
+
+<http://example/place/54>
+    rdf:type schema:Place ;
+    schema:name "CASTRELO DE MINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.28916606764597 ;
+        schema:longitude -8.054458927480669
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.28916606764597,-8.054458927480669" .
+
+<http://example/place/55>
+    rdf:type schema:Place ;
+    schema:name "CASTRELO DO VAL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.05499276544971 ;
+        schema:longitude -7.358143933905853
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.05499276544971,-7.358143933905853" .
+
+<http://example/place/56>
+    rdf:type schema:Place ;
+    schema:name "CASTRO CALDELAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.37262975041858 ;
+        schema:longitude -7.403740793717336
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.37262975041858,-7.403740793717336" .
+
+<http://example/place/57>
+    rdf:type schema:Place ;
+    schema:name "CASTRO DE REI" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.16777126459176 ;
+        schema:longitude -7.456600089847789
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.16777126459176,-7.4566000898477895" .
+
+<http://example/place/58>
+    rdf:type schema:Place ;
+    schema:name "CASTROVERDE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.0347909488066 ;
+        schema:longitude -7.327819559936646
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.034790948806595,-7.327819559936646" .
+
+<http://example/place/59>
+    rdf:type schema:Place ;
+    schema:name "CATOIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.65645143829202 ;
+        schema:longitude -8.71115988736719
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.65645143829202,-8.71115988736719" .
+
+<http://example/place/60>
+    rdf:type schema:Place ;
+    schema:name "CEDEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.69110245344204 ;
+        schema:longitude -8.041462062644944
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.691102453442035,-8.041462062644944" .
+
+<http://example/place/61>
+    rdf:type schema:Place ;
+    schema:name "CEE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.99095532228923 ;
+        schema:longitude -9.073544799092003
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.99095532228923,-9.073544799092003" .
+
+<http://example/place/62>
+    rdf:type schema:Place ;
+    schema:name "CELANOVA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.17117832565519 ;
+        schema:longitude -7.926987442855448
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.17117832565519,-7.926987442855448" .
+
+<http://example/place/63>
+    rdf:type schema:Place ;
+    schema:name "CENLLE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.34901979321002 ;
+        schema:longitude -8.067621323027886
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.34901979321002,-8.067621323027886" .
+
+<http://example/place/64>
+    rdf:type schema:Place ;
+    schema:name "CERCEDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.17553022377688 ;
+        schema:longitude -8.490501064055175
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.175530223776875,-8.490501064055175" .
+
+<http://example/place/65>
+    rdf:type schema:Place ;
+    schema:name "CERDEDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.53796871325989 ;
+        schema:longitude -8.414948973746386
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.53796871325989,-8.414948973746386" .
+
+<http://example/place/66>
+    rdf:type schema:Place ;
+    schema:name "CERDIDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.60804607856763 ;
+        schema:longitude -7.974133367813052
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.60804607856763,-7.974133367813052" .
+
+<http://example/place/67>
+    rdf:type schema:Place ;
+    schema:name "CERVANTES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.798643400680085 ;
+        schema:longitude -6.974596291969746
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.798643400680085,-6.974596291969746" .
+
+<http://example/place/68>
+    rdf:type schema:Place ;
+    schema:name "CERVO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.66279736485999 ;
+        schema:longitude -7.4382939138543325
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.66279736485999,-7.4382939138543325" .
+
+<http://example/place/69>
+    rdf:type schema:Place ;
+    schema:name "CESURAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.16861809517117 ;
+        schema:longitude -8.198178528404817
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.16861809517117,-8.198178528404817" .
+
+<http://example/place/70>
+    rdf:type schema:Place ;
+    schema:name "CHANDREXA DE QUEIXA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.26679361187832 ;
+        schema:longitude -7.39745605099925
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.26679361187832,-7.39745605099925" .
+
+<http://example/place/71>
+    rdf:type schema:Place ;
+    schema:name "CHANTADA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.61518676379485 ;
+        schema:longitude -7.82518729627249
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.61518676379485,-7.82518729627249" .
+
+<http://example/place/72>
+    rdf:type schema:Place ;
+    schema:name "COIROS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.24392966608781 ;
+        schema:longitude -8.146501251513296
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.24392966608781,-8.146501251513296" .
+
+<http://example/place/73>
+    rdf:type schema:Place ;
+    schema:name "COLES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.404530493321566 ;
+        schema:longitude -7.839134568332212
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.404530493321566,-7.839134568332212" .
+
+<http://example/place/74>
+    rdf:type schema:Place ;
+    schema:name "CORCUBION" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.92893045339988 ;
+        schema:longitude -9.199516577680924
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.92893045339988,-9.199516577680924" .
+
+<http://example/place/75>
+    rdf:type schema:Place ;
+    schema:name "CORISTANCO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.15234272957318 ;
+        schema:longitude -8.759779341550464
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.15234272957318,-8.759779341550464" .
+
+<http://example/place/76>
+    rdf:type schema:Place ;
+    schema:name "CORTEGADA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.211241182572266 ;
+        schema:longitude -8.146939542282768
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.211241182572266,-8.146939542282768" .
+
+<http://example/place/77>
+    rdf:type schema:Place ;
+    schema:name "COSPEITO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.22160746768425 ;
+        schema:longitude -7.539827473347229
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.22160746768425,-7.539827473347229" .
+
+<http://example/place/78>
+    rdf:type schema:Place ;
+    schema:name "COTOBADE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.47508550757125 ;
+        schema:longitude -8.508006103523925
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.47508550757125,-8.508006103523925" .
+
+<http://example/place/79>
+    rdf:type schema:Place ;
+    schema:name "COVELO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.26296863729824 ;
+        schema:longitude -8.35350906754417
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.262968637298236,-8.35350906754417" .
+
+<http://example/place/80>
+    rdf:type schema:Place ;
+    schema:name "CRECENTE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.18243281531171 ;
+        schema:longitude -8.21706031891963
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.18243281531171,-8.21706031891963" .
+
+<http://example/place/81>
+    rdf:type schema:Place ;
+    schema:name "CUALEDRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.98465597964602 ;
+        schema:longitude -7.602602751591874
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.98465597964602,-7.602602751591874" .
+
+<http://example/place/82>
+    rdf:type schema:Place ;
+    schema:name "CULLEREDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.27589368669853 ;
+        schema:longitude -8.405061825453611
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.27589368669853,-8.405061825453611" .
+
+<http://example/place/83>
+    rdf:type schema:Place ;
+    schema:name "CUNTIS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.62844919682385 ;
+        schema:longitude -8.539436931833512
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.62844919682385,-8.539436931833512" .
+
+<http://example/place/84>
+    rdf:type schema:Place ;
+    schema:name "CURTIS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.144207977072526 ;
+        schema:longitude -8.064685848682865
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.144207977072526,-8.064685848682865" .
+
+<http://example/place/85>
+    rdf:type schema:Place ;
+    schema:name "DODRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.74809349789255 ;
+        schema:longitude -8.707819125470431
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.74809349789255,-8.707819125470431" .
+
+<http://example/place/86>
+    rdf:type schema:Place ;
+    schema:name "DOZON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.5698899197014 ;
+        schema:longitude -8.041930849946775
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.569889919701396,-8.041930849946775" .
+
+<http://example/place/87>
+    rdf:type schema:Place ;
+    schema:name "DUMBRIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.99117054370897 ;
+        schema:longitude -9.079725416283246
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.99117054370897,-9.079725416283246" .
+
+<http://example/place/88>
+    rdf:type schema:Place ;
+    schema:name "ENTRIMO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.96009571606478 ;
+        schema:longitude -8.136564859483641
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.96009571606478,-8.136564859483641" .
+
+<http://example/place/89>
+    rdf:type schema:Place ;
+    schema:name "ESGOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.34062432181868 ;
+        schema:longitude -7.690460990010505
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.34062432181868,-7.690460990010505" .
+
+<http://example/place/90>
+    rdf:type schema:Place ;
+    schema:name "FENE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.46965720986176 ;
+        schema:longitude -8.15580539672411
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.46965720986176,-8.15580539672411" .
+
+<http://example/place/91>
+    rdf:type schema:Place ;
+    schema:name "FERROL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.508045919845486 ;
+        schema:longitude -8.276859046722738
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.508045919845486,-8.276859046722738" .
+
+<http://example/place/92>
+    rdf:type schema:Place ;
+    schema:name "FISTERRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.92757042237438 ;
+        schema:longitude -9.268652366368071
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.92757042237438,-9.268652366368073" .
+
+<http://example/place/93>
+    rdf:type schema:Place ;
+    schema:name "FOLGOSO DO COUREL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.64394067765716 ;
+        schema:longitude -7.153813559642575
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.643940677657156,-7.153813559642575" .
+
+<http://example/place/94>
+    rdf:type schema:Place ;
+    schema:name "FORCAREI" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.59925680457116 ;
+        schema:longitude -8.341200112372453
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.599256804571155,-8.341200112372453" .
+
+<http://example/place/95>
+    rdf:type schema:Place ;
+    schema:name "FORNELOS DE MONTES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.32897309875901 ;
+        schema:longitude -8.454582244449742
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.32897309875901,-8.454582244449742" .
+
+<http://example/place/96>
+    rdf:type schema:Place ;
+    schema:name "FOZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.5974630158459 ;
+        schema:longitude -7.351570357622601
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.5974630158459,-7.351570357622601" .
+
+<http://example/place/97>
+    rdf:type schema:Place ;
+    schema:name "FRADES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.07890612251515 ;
+        schema:longitude -8.285732404039123
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.07890612251515,-8.285732404039123" .
+
+<http://example/place/98>
+    rdf:type schema:Place ;
+    schema:name "FRIOL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.044369285997945 ;
+        schema:longitude -7.809245012627512
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.044369285997945,-7.809245012627512" .
+
+<http://example/place/99>
+    rdf:type schema:Place ;
+    schema:name "GOMESENDE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.19856946401429 ;
+        schema:longitude -8.094699443653646
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.198569464014284,-8.094699443653646" .
+
+<http://example/place/100>
+    rdf:type schema:Place ;
+    schema:name "GONDOMAR" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.123850385254975 ;
+        schema:longitude -8.724642237690373
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.123850385254975,-8.724642237690373" .
+
+<http://example/place/101>
+    rdf:type schema:Place ;
+    schema:name "GUITIRIZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.21616502805657 ;
+        schema:longitude -7.844942076590136
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.21616502805657,-7.8449420765901365" .
+
+<http://example/place/102>
+    rdf:type schema:Place ;
+    schema:name "GUNTIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.904678329763634 ;
+        schema:longitude -7.648524137865172
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.904678329763634,-7.648524137865172" .
+
+<http://example/place/103>
+    rdf:type schema:Place ;
+    schema:name "IRIXOA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.28745767623226 ;
+        schema:longitude -8.051643014563414
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.28745767623226,-8.051643014563414" .
+
+<http://example/place/104>
+    rdf:type schema:Place ;
+    schema:name "LALIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.653388507217 ;
+        schema:longitude -8.140068132587365
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.653388507217,-8.140068132587365" .
+
+<http://example/place/105>
+    rdf:type schema:Place ;
+    schema:name "LANCARA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.83977435637647 ;
+        schema:longitude -7.29745832477442
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.839774356376466,-7.2974583247744205" .
+
+<http://example/place/106>
+    rdf:type schema:Place ;
+    schema:name "LAROUCO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.35162107562728 ;
+        schema:longitude -7.16948681688335
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.35162107562728,-7.16948681688335" .
+
+<http://example/place/107>
+    rdf:type schema:Place ;
+    schema:name "LAXE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.18488668518013 ;
+        schema:longitude -9.024262783138584
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.18488668518013,-9.024262783138585" .
+
+<http://example/place/108>
+    rdf:type schema:Place ;
+    schema:name "LAZA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.12670795790747 ;
+        schema:longitude -7.462216146158361
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.12670795790747,-7.462216146158361" .
+
+<http://example/place/109>
+    rdf:type schema:Place ;
+    schema:name "LEIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.38053088224996 ;
+        schema:longitude -8.165867221964712
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.38053088224996,-8.165867221964712" .
+
+<http://example/place/110>
+    rdf:type schema:Place ;
+    schema:name "LOBEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.01046521892248 ;
+        schema:longitude -8.040909629417325
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.01046521892248,-8.040909629417325" .
+
+<http://example/place/111>
+    rdf:type schema:Place ;
+    schema:name "LOBIOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.91253892262018 ;
+        schema:longitude -8.066467081625234
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.91253892262018,-8.066467081625234" .
+
+<http://example/place/112>
+    rdf:type schema:Place ;
+    schema:name "LOURENZA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.460908082092885 ;
+        schema:longitude -7.2874272533415905
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.460908082092885,-7.2874272533415905" .
+
+<http://example/place/113>
+    rdf:type schema:Place ;
+    schema:name "LOUSAME" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.77889400019492 ;
+        schema:longitude -8.83464366294854
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.77889400019492,-8.83464366294854" .
+
+<http://example/place/114>
+    rdf:type schema:Place ;
+    schema:name "LUGO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.01095745548157 ;
+        schema:longitude -7.567669475346804
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.01095745548157,-7.567669475346804" .
+
+<http://example/place/115>
+    rdf:type schema:Place ;
+    schema:name "MACEDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.2580080498534 ;
+        schema:longitude -7.60128828581598
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.2580080498534,-7.60128828581598" .
+
+<http://example/place/116>
+    rdf:type schema:Place ;
+    schema:name "MALPICA DE BERGANTINOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.28977003061251 ;
+        schema:longitude -8.84223056183465
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.28977003061251,-8.84223056183465" .
+
+<http://example/place/117>
+    rdf:type schema:Place ;
+    schema:name "MANON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.6266037926031 ;
+        schema:longitude -7.747890253559479
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.6266037926031,-7.747890253559479" .
+
+<http://example/place/118>
+    rdf:type schema:Place ;
+    schema:name "MANZANEDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.28075048117412 ;
+        schema:longitude -7.240052272111919
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.28075048117412,-7.240052272111919" .
+
+<http://example/place/119>
+    rdf:type schema:Place ;
+    schema:name "MARIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.34371921627962 ;
+        schema:longitude -8.690326676127865
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.34371921627962,-8.690326676127865" .
+
+<http://example/place/120>
+    rdf:type schema:Place ;
+    schema:name "MASIDE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.42225985895255 ;
+        schema:longitude -8.016309806410543
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.42225985895255,-8.016309806410543" .
+
+<http://example/place/121>
+    rdf:type schema:Place ;
+    schema:name "MAZARICOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.93475713978711 ;
+        schema:longitude -9.004291894158648
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.93475713978711,-9.004291894158648" .
+
+<http://example/place/122>
+    rdf:type schema:Place ;
+    schema:name "MEANO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.45355904053122 ;
+        schema:longitude -8.77692534078279
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.45355904053122,-8.77692534078279" .
+
+<http://example/place/123>
+    rdf:type schema:Place ;
+    schema:name "MEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.22168080547426 ;
+        schema:longitude -7.273383172809417
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.22168080547426,-7.273383172809417" .
+
+<http://example/place/124>
+    rdf:type schema:Place ;
+    schema:name "MEIS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.49228473027814 ;
+        schema:longitude -8.735075889761822
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.49228473027814,-8.735075889761822" .
+
+<http://example/place/125>
+    rdf:type schema:Place ;
+    schema:name "MELIDE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.93057485615344 ;
+        schema:longitude -8.016611772005971
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.93057485615344,-8.016611772005971" .
+
+<http://example/place/126>
+    rdf:type schema:Place ;
+    schema:name "MELON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.291788878000574 ;
+        schema:longitude -8.219719806211545
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.291788878000574,-8.219719806211545" .
+
+<http://example/place/127>
+    rdf:type schema:Place ;
+    schema:name "MESIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.10689236619817 ;
+        schema:longitude -8.2570385837324
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.10689236619817,-8.2570385837324" .
+
+<http://example/place/128>
+    rdf:type schema:Place ;
+    schema:name "MINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.37429216664552 ;
+        schema:longitude -8.192835782447583
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.37429216664552,-8.192835782447583" .
+
+<http://example/place/129>
+    rdf:type schema:Place ;
+    schema:name "MOANA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.32744605051329 ;
+        schema:longitude -8.712558530817644
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.32744605051329,-8.712558530817644" .
+
+<http://example/place/130>
+    rdf:type schema:Place ;
+    schema:name "MOECHE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.53254070536678 ;
+        schema:longitude -8.004560081932308
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.53254070536678,-8.004560081932308" .
+
+<http://example/place/131>
+    rdf:type schema:Place ;
+    schema:name "MONDARIZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.25830649993234 ;
+        schema:longitude -8.455264620249526
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.25830649993234,-8.455264620249526" .
+
+<http://example/place/132>
+    rdf:type schema:Place ;
+    schema:name "MONDARIZ-BALNEARIO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.22350285568547 ;
+        schema:longitude -8.472988906069656
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.22350285568547,-8.472988906069656" .
+
+<http://example/place/133>
+    rdf:type schema:Place ;
+    schema:name "MONDONEDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.43678011597304 ;
+        schema:longitude -7.3506800395548
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.436780115973036,-7.3506800395548" .
+
+<http://example/place/134>
+    rdf:type schema:Place ;
+    schema:name "MONFERO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.3159812484709 ;
+        schema:longitude -8.081063461645023
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.3159812484709,-8.081063461645023" .
+
+<http://example/place/135>
+    rdf:type schema:Place ;
+    schema:name "MONFORTE DE LEMOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.52724223745145 ;
+        schema:longitude -7.483815210883685
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.52724223745145,-7.4838152108836855" .
+
+<http://example/place/136>
+    rdf:type schema:Place ;
+    schema:name "MONTEDERRAMO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.29312316812814 ;
+        schema:longitude -7.520502211669968
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.29312316812814,-7.520502211669968" .
+
+<http://example/place/137>
+    rdf:type schema:Place ;
+    schema:name "MONTERREI" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.96597086483153 ;
+        schema:longitude -7.561256329110963
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.96597086483153,-7.561256329110963" .
+
+<http://example/place/138>
+    rdf:type schema:Place ;
+    schema:name "MONTERROSO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.83129879441007 ;
+        schema:longitude -7.787303875274552
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.83129879441007,-7.787303875274552" .
+
+<http://example/place/139>
+    rdf:type schema:Place ;
+    schema:name "MORANA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.57840020426996 ;
+        schema:longitude -8.590296593877536
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.57840020426996,-8.590296593877536" .
+
+<http://example/place/140>
+    rdf:type schema:Place ;
+    schema:name "MOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.20725019710542 ;
+        schema:longitude -8.630303831136361
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.20725019710542,-8.630303831136361" .
+
+<http://example/place/141>
+    rdf:type schema:Place ;
+    schema:name "MUGARDOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.45795396703214 ;
+        schema:longitude -8.220388440583772
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.45795396703214,-8.220388440583772" .
+
+<http://example/place/142>
+    rdf:type schema:Place ;
+    schema:name "MUINOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.95276396946981 ;
+        schema:longitude -7.944029800614633
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.952763969469814,-7.944029800614633" .
+
+<http://example/place/143>
+    rdf:type schema:Place ;
+    schema:name "MURAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.47391145979205 ;
+        schema:longitude -7.694569801456715
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.47391145979205,-7.694569801456715" .
+
+<http://example/place/144>
+    rdf:type schema:Place ;
+    schema:name "MUROS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.81116864745091 ;
+        schema:longitude -9.021757703169747
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.81116864745091,-9.021757703169747" .
+
+<http://example/place/145>
+    rdf:type schema:Place ;
+    schema:name "MUXIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.05644344357761 ;
+        schema:longitude -9.206157688419069
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.05644344357761,-9.206157688419067" .
+
+<http://example/place/146>
+    rdf:type schema:Place ;
+    schema:name "NARON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.53786631381024 ;
+        schema:longitude -8.17499910285234
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.53786631381024,-8.17499910285234" .
+
+<http://example/place/147>
+    rdf:type schema:Place ;
+    schema:name "NAVIA DE SUARNA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.97921401569541 ;
+        schema:longitude -6.992563877472046
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.97921401569541,-6.992563877472046" .
+
+<http://example/place/148>
+    rdf:type schema:Place ;
+    schema:name "NEDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.50779974423211 ;
+        schema:longitude -8.125042413525769
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.50779974423211,-8.125042413525769" .
+
+<http://example/place/149>
+    rdf:type schema:Place ;
+    schema:name "NEGREIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.9135795530212 ;
+        schema:longitude -8.810205484037574
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.913579553021194,-8.810205484037574" .
+
+<http://example/place/150>
+    rdf:type schema:Place ;
+    schema:name "NEGUEIRA DE MUNIZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.14072645597474 ;
+        schema:longitude -6.877376237463917
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.14072645597474,-6.877376237463917" .
+
+<http://example/place/151>
+    rdf:type schema:Place ;
+    schema:name "NIGRAN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.14446241881305 ;
+        schema:longitude -8.77365051075643
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.14446241881305,-8.77365051075643" .
+
+<http://example/place/152>
+    rdf:type schema:Place ;
+    schema:name "NOGUEIRA DE RAMUIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.41060632989215 ;
+        schema:longitude -7.728319612033129
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.41060632989215,-7.728319612033129" .
+
+<http://example/place/153>
+    rdf:type schema:Place ;
+    schema:name "NOIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.79889198275029 ;
+        schema:longitude -8.87341656649222
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.79889198275029,-8.87341656649222" .
+
+<http://example/place/154>
+    rdf:type schema:Place ;
+    schema:name "OIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.02095344024327 ;
+        schema:longitude -8.838078651384937
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.02095344024327,-8.838078651384937" .
+
+<http://example/place/155>
+    rdf:type schema:Place ;
+    schema:name "OIMBRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.89469423626635 ;
+        schema:longitude -7.526824006844436
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.89469423626635,-7.5268240068444365" .
+
+<http://example/place/156>
+    rdf:type schema:Place ;
+    schema:name "OLEIROS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.37038574790769 ;
+        schema:longitude -8.327735398909672
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.37038574790769,-8.327735398909672" .
+
+<http://example/place/157>
+    rdf:type schema:Place ;
+    schema:name "ORDES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.10816528805361 ;
+        schema:longitude -8.40323755100383
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.10816528805361,-8.40323755100383" .
+
+<http://example/place/158>
+    rdf:type schema:Place ;
+    schema:name "OROSO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.00287083711041 ;
+        schema:longitude -8.402975072678567
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.00287083711041,-8.402975072678567" .
+
+<http://example/place/159>
+    rdf:type schema:Place ;
+    schema:name "ORTIGUEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.62152512384404 ;
+        schema:longitude -7.830867079917993
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.62152512384404,-7.830867079917993" .
+
+<http://example/place/160>
+    rdf:type schema:Place ;
+    schema:name "OTRA PROVINCIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.53227195757975 ;
+        schema:longitude -7.1669577588695015
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.53227195757975,-7.1669577588695015" .
+
+<http://example/place/161>
+    rdf:type schema:Place ;
+    schema:name "OURENSE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.35024880448896 ;
+        schema:longitude -7.877942265812163
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.35024880448896,-7.877942265812163" .
+
+<http://example/place/162>
+    rdf:type schema:Place ;
+    schema:name "OUROL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.56495403964042 ;
+        schema:longitude -7.669162474895772
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.56495403964042,-7.669162474895772" .
+
+<http://example/place/163>
+    rdf:type schema:Place ;
+    schema:name "OUTEIRO DE REI" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.09476911906209 ;
+        schema:longitude -7.6345205060489505
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.09476911906209,-7.6345205060489505" .
+
+<http://example/place/164>
+    rdf:type schema:Place ;
+    schema:name "OUTES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.86862227743112 ;
+        schema:longitude -8.897116245095507
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.868622277431115,-8.897116245095507" .
+
+<http://example/place/165>
+    rdf:type schema:Place ;
+    schema:name "OZA DOS RIOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.19875172411424 ;
+        schema:longitude -8.145012400272641
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.19875172411424,-8.145012400272641" .
+
+<http://example/place/166>
+    rdf:type schema:Place ;
+    schema:name "OZA-CESURAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.20169541484777 ;
+        schema:longitude -8.14261759859663
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.20169541484777,-8.14261759859663" .
+
+<http://example/place/167>
+    rdf:type schema:Place ;
+    schema:name "PADERNE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.29573848747511 ;
+        schema:longitude -8.17634912869708
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.29573848747511,-8.17634912869708" .
+
+<http://example/place/168>
+    rdf:type schema:Place ;
+    schema:name "PADERNE DE ALLARIZ" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.28354554229533 ;
+        schema:longitude -7.759553934807238
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.28354554229533,-7.759553934807238" .
+
+<http://example/place/169>
+    rdf:type schema:Place ;
+    schema:name "PADRENDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.1264978972872 ;
+        schema:longitude -8.16069861807096
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.126497897287194,-8.16069861807096" .
+
+<http://example/place/170>
+    rdf:type schema:Place ;
+    schema:name "PADRON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.76379722459826 ;
+        schema:longitude -8.635700419919342
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.763797224598264,-8.635700419919342" .
+
+<http://example/place/171>
+    rdf:type schema:Place ;
+    schema:name "PALAS DE REI" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.90399496343213 ;
+        schema:longitude -7.891014720009944
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.90399496343213,-7.891014720009944" .
+
+<http://example/place/172>
+    rdf:type schema:Place ;
+    schema:name "PANTON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.499817714226566 ;
+        schema:longitude -7.653086632690846
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.499817714226566,-7.653086632690846" .
+
+<http://example/place/173>
+    rdf:type schema:Place ;
+    schema:name "PARADA DE SIL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.370339004303226 ;
+        schema:longitude -7.558082019217096
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.370339004303226,-7.558082019217096" .
+
+<http://example/place/174>
+    rdf:type schema:Place ;
+    schema:name "PARADELA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.73815230746991 ;
+        schema:longitude -7.587123888615833
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.73815230746991,-7.587123888615833" .
+
+<http://example/place/175>
+    rdf:type schema:Place ;
+    schema:name "PAZOS DE BORBEN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.29690286258028 ;
+        schema:longitude -8.53635967436729
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.29690286258028,-8.53635967436729" .
+
+<http://example/place/176>
+    rdf:type schema:Place ;
+    schema:name "PEDRAFITA DO CEBREIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.694805051796905 ;
+        schema:longitude -7.0800257618668585
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.694805051796905,-7.0800257618668585" .
+
+<http://example/place/177>
+    rdf:type schema:Place ;
+    schema:name "PETIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.37881658529691 ;
+        schema:longitude -7.144285283651826
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.37881658529691,-7.144285283651826" .
+
+<http://example/place/178>
+    rdf:type schema:Place ;
+    schema:name "PINOR" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.53402834852156 ;
+        schema:longitude -8.021000602542596
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.53402834852156,-8.021000602542596" .
+
+<http://example/place/179>
+    rdf:type schema:Place ;
+    schema:name "POIO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.44699166057879 ;
+        schema:longitude -8.71481363508029
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.44699166057879,-8.71481363508029" .
+
+<http://example/place/180>
+    rdf:type schema:Place ;
+    schema:name "POL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.153694281473285 ;
+        schema:longitude -7.317090546430162
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.153694281473285,-7.317090546430162" .
+
+<http://example/place/181>
+    rdf:type schema:Place ;
+    schema:name "PONTE CALDELAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.39048319648981 ;
+        schema:longitude -8.516570001756513
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.39048319648981,-8.516570001756513" .
+
+<http://example/place/182>
+    rdf:type schema:Place ;
+    schema:name "PONTEAREAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.19132197915469 ;
+        schema:longitude -8.51584074576897
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.191321979154694,-8.51584074576897" .
+
+<http://example/place/183>
+    rdf:type schema:Place ;
+    schema:name "PONTECESO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.26584274407828 ;
+        schema:longitude -8.893408193640264
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.26584274407828,-8.893408193640264" .
+
+<http://example/place/184>
+    rdf:type schema:Place ;
+    schema:name "PONTECESURES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.721803164201205 ;
+        schema:longitude -8.641959160467344
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.721803164201205,-8.641959160467344" .
+
+<http://example/place/185>
+    rdf:type schema:Place ;
+    schema:name "PONTEDEUME" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.403435370239656 ;
+        schema:longitude -8.16108350532213
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.403435370239656,-8.16108350532213" .
+
+<http://example/place/186>
+    rdf:type schema:Place ;
+    schema:name "PONTEDEVA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.17740392482357 ;
+        schema:longitude -8.152856721634187
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.17740392482357,-8.152856721634187" .
+
+<http://example/place/187>
+    rdf:type schema:Place ;
+    schema:name "PONTEVEDRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.423639805969 ;
+        schema:longitude -8.606734570039414
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.423639805969,-8.606734570039414" .
+
+<http://example/place/188>
+    rdf:type schema:Place ;
+    schema:name "PORQUEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.03948323291132 ;
+        schema:longitude -7.853288347821831
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.039483232911316,-7.853288347821831" .
+
+<http://example/place/189>
+    rdf:type schema:Place ;
+    schema:name "PORTAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.573229480846905 ;
+        schema:longitude -8.668473910722174
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.573229480846905,-8.668473910722174" .
+
+<http://example/place/190>
+    rdf:type schema:Place ;
+    schema:name "PORTO DO SON" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.68860185044302 ;
+        schema:longitude -8.985119216045453
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.68860185044302,-8.985119216045453" .
+
+<http://example/place/191>
+    rdf:type schema:Place ;
+    schema:name "PORTOMARIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.80966599159964 ;
+        schema:longitude -7.689967070148844
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.80966599159964,-7.689967070148844" .
+
+<http://example/place/192>
+    rdf:type schema:Place ;
+    schema:name "PORTUGAL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.93828511947184 ;
+        schema:longitude -7.752600782445992
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.938285119471836,-7.752600782445992" .
+
+<http://example/place/193>
+    rdf:type schema:Place ;
+    schema:name "PUNXIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.38073908925272 ;
+        schema:longitude -8.002306614916398
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.380739089252714,-8.002306614916398" .
+
+<http://example/place/194>
+    rdf:type schema:Place ;
+    schema:name "QUINTELA DE LEIRADO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.12759135307275 ;
+        schema:longitude -8.08939397378339
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.12759135307275,-8.08939397378339" .
+
+<http://example/place/195>
+    rdf:type schema:Place ;
+    schema:name "QUIROGA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.48671391288768 ;
+        schema:longitude -7.219371587092864
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.48671391288768,-7.219371587092864" .
+
+<http://example/place/196>
+    rdf:type schema:Place ;
+    schema:name "RABADE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.13168654030847 ;
+        schema:longitude -7.617836464955911
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.131686540308465,-7.617836464955911" .
+
+<http://example/place/197>
+    rdf:type schema:Place ;
+    schema:name "RAIRIZ DE VEIGA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.10904186499938 ;
+        schema:longitude -7.85031383811597
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.10904186499938,-7.85031383811597" .
+
+<http://example/place/198>
+    rdf:type schema:Place ;
+    schema:name "RAMIRAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.18492891124112 ;
+        schema:longitude -8.037773784715466
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.184928911241116,-8.037773784715466" .
+
+<http://example/place/199>
+    rdf:type schema:Place ;
+    schema:name "REDONDELA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.2857751595759 ;
+        schema:longitude -8.620382544632255
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.2857751595759,-8.620382544632255" .
+
+<http://example/place/200>
+    rdf:type schema:Place ;
+    schema:name "RIANXO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.69074577456052 ;
+        schema:longitude -8.773581783559404
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.69074577456052,-8.773581783559404" .
+
+<http://example/place/201>
+    rdf:type schema:Place ;
+    schema:name "RIBADAVIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.29310900904334 ;
+        schema:longitude -8.14292247385765
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.29310900904334,-8.14292247385765" .
+
+<http://example/place/202>
+    rdf:type schema:Place ;
+    schema:name "RIBADEO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.51952832773459 ;
+        schema:longitude -7.100841635957162
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.51952832773459,-7.100841635957162" .
+
+<http://example/place/203>
+    rdf:type schema:Place ;
+    schema:name "RIBADUMIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.54056720239237 ;
+        schema:longitude -8.733677773741809
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.54056720239237,-8.733677773741809" .
+
+<http://example/place/204>
+    rdf:type schema:Place ;
+    schema:name "RIBAS DE SIL" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.44058774141899 ;
+        schema:longitude -7.320117915862875
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.44058774141899,-7.320117915862875" .
+
+<http://example/place/205>
+    rdf:type schema:Place ;
+    schema:name "RIBEIRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.597056765878015 ;
+        schema:longitude -8.995986167343249
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.597056765878015,-8.995986167343249" .
+
+<http://example/place/206>
+    rdf:type schema:Place ;
+    schema:name "RIBEIRA DE PIQUIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.183246329119626 ;
+        schema:longitude -7.194354580740344
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.183246329119626,-7.1943545807403435" .
+
+<http://example/place/207>
+    rdf:type schema:Place ;
+    schema:name "RIOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.97411564167685 ;
+        schema:longitude -7.270166670844932
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.97411564167685,-7.270166670844932" .
+
+<http://example/place/208>
+    rdf:type schema:Place ;
+    schema:name "RIOTORTO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.31026899864666 ;
+        schema:longitude -7.265662730894678
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.31026899864666,-7.265662730894678" .
+
+<http://example/place/209>
+    rdf:type schema:Place ;
+    schema:name "RODEIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.64486737457623 ;
+        schema:longitude -7.952641911558052
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.64486737457623,-7.952641911558052" .
+
+<http://example/place/210>
+    rdf:type schema:Place ;
+    schema:name "ROIS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.80603371488319 ;
+        schema:longitude -8.721467071101747
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.806033714883185,-8.721467071101747" .
+
+<http://example/place/211>
+    rdf:type schema:Place ;
+    schema:name "RUBIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.462704772045896 ;
+        schema:longitude -6.949635312930834
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.462704772045896,-6.949635312930834" .
+
+<http://example/place/212>
+    rdf:type schema:Place ;
+    schema:name "SADA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.35762333484959 ;
+        schema:longitude -8.282619219287422
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.35762333484959,-8.282619219287422" .
+
+<http://example/place/213>
+    rdf:type schema:Place ;
+    schema:name "SALCEDA DE CASELAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.10994548045167 ;
+        schema:longitude -8.575866557439447
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.10994548045167,-8.575866557439447" .
+
+<http://example/place/214>
+    rdf:type schema:Place ;
+    schema:name "SALVATERRA DE MINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.12927686787352 ;
+        schema:longitude -8.489905220238724
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.12927686787352,-8.489905220238724" .
+
+<http://example/place/215>
+    rdf:type schema:Place ;
+    schema:name "SAMOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.72881963078911 ;
+        schema:longitude -7.271282800834158
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.72881963078911,-7.271282800834158" .
+
+<http://example/place/216>
+    rdf:type schema:Place ;
+    schema:name "SAN AMARO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.383053709246894 ;
+        schema:longitude -8.06733352289033
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.383053709246894,-8.06733352289033" .
+
+<http://example/place/217>
+    rdf:type schema:Place ;
+    schema:name "SAN CIBRAO DAS VINAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.2837371779665 ;
+        schema:longitude -7.856985254285949
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.2837371779665,-7.8569852542859495" .
+
+<http://example/place/218>
+    rdf:type schema:Place ;
+    schema:name "SAN CRISTOVO DE CEA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.50660439393493 ;
+        schema:longitude -7.943144038520559
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.50660439393493,-7.943144038520559" .
+
+<http://example/place/219>
+    rdf:type schema:Place ;
+    schema:name "SAN SADURNINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.51658541967822 ;
+        schema:longitude -8.050570225855184
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.51658541967822,-8.050570225855184" .
+
+<http://example/place/220>
+    rdf:type schema:Place ;
+    schema:name "SAN XOAN DE RIO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.391712909696665 ;
+        schema:longitude -7.335785669997775
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.391712909696665,-7.335785669997775" .
+
+<http://example/place/221>
+    rdf:type schema:Place ;
+    schema:name "SANDIAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.14668435427938 ;
+        schema:longitude -7.765910905770024
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.14668435427938,-7.765910905770024" .
+
+<http://example/place/222>
+    rdf:type schema:Place ;
+    schema:name "SANTA COMBA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.0647778934907 ;
+        schema:longitude -8.77534219169473
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.0647778934907,-8.77534219169473" .
+
+<http://example/place/223>
+    rdf:type schema:Place ;
+    schema:name "SANTIAGO DE COMPOSTELA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.91054891753242 ;
+        schema:longitude -8.550132884304656
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.91054891753242,-8.550132884304656" .
+
+<http://example/place/224>
+    rdf:type schema:Place ;
+    schema:name "SANTISO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.86979436648806 ;
+        schema:longitude -8.053971487765844
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.86979436648806,-8.053971487765844" .
+
+<http://example/place/225>
+    rdf:type schema:Place ;
+    schema:name "SANXENXO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.41986243939749 ;
+        schema:longitude -8.819876074087494
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.41986243939749,-8.819876074087494" .
+
+<http://example/place/226>
+    rdf:type schema:Place ;
+    schema:name "SARREAUS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.11720548663372 ;
+        schema:longitude -7.597539783611501
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.11720548663372,-7.597539783611501" .
+
+<http://example/place/227>
+    rdf:type schema:Place ;
+    schema:name "SARRIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.76615671114038 ;
+        schema:longitude -7.443968640129935
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.76615671114038,-7.443968640129935" .
+
+<http://example/place/228>
+    rdf:type schema:Place ;
+    schema:name "SILLEDA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.6787510180588 ;
+        schema:longitude -8.264398075160706
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.6787510180588,-8.264398075160706" .
+
+<http://example/place/229>
+    rdf:type schema:Place ;
+    schema:name "SOBER" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.43368573600263 ;
+        schema:longitude -7.558145011562892
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.43368573600263,-7.558145011562892" .
+
+<http://example/place/230>
+    rdf:type schema:Place ;
+    schema:name "SOBRADO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.05188481464597 ;
+        schema:longitude -7.995908171244839
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.05188481464597,-7.995908171244839" .
+
+<http://example/place/231>
+    rdf:type schema:Place ;
+    schema:name "SOUTOMAIOR" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.33184492439988 ;
+        schema:longitude -8.56741304447946
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.33184492439988,-8.56741304447946" .
+
+<http://example/place/232>
+    rdf:type schema:Place ;
+    schema:name "TABOADA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.71490961631064 ;
+        schema:longitude -7.765671742083125
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.714909616310635,-7.765671742083125" .
+
+<http://example/place/233>
+    rdf:type schema:Place ;
+    schema:name "TABOADELA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.26484378935048 ;
+        schema:longitude -7.815714580639481
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.26484378935048,-7.815714580639481" .
+
+<http://example/place/234>
+    rdf:type schema:Place ;
+    schema:name "TEO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.81134657916308 ;
+        schema:longitude -8.568330767065136
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.81134657916308,-8.568330767065136" .
+
+<http://example/place/235>
+    rdf:type schema:Place ;
+    schema:name "TOEN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.31758742554449 ;
+        schema:longitude -7.963736189120425
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.31758742554449,-7.963736189120425" .
+
+<http://example/place/236>
+    rdf:type schema:Place ;
+    schema:name "TOMINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.01080483211141 ;
+        schema:longitude -8.733649926662189
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.010804832111404,-8.733649926662189" .
+
+<http://example/place/237>
+    rdf:type schema:Place ;
+    schema:name "TOQUES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.97111823841762 ;
+        schema:longitude -7.960295456777762
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.97111823841762,-7.960295456777762" .
+
+<http://example/place/238>
+    rdf:type schema:Place ;
+    schema:name "TORDOIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.1056834816302 ;
+        schema:longitude -8.574940616731439
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.1056834816302,-8.574940616731439" .
+
+<http://example/place/239>
+    rdf:type schema:Place ;
+    schema:name "TOURO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.862027913784864 ;
+        schema:longitude -8.302342084344136
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.862027913784864,-8.302342084344136" .
+
+<http://example/place/240>
+    rdf:type schema:Place ;
+    schema:name "TRABADA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.44577885568789 ;
+        schema:longitude -7.134106783192074
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.445778855687884,-7.134106783192074" .
+
+<http://example/place/241>
+    rdf:type schema:Place ;
+    schema:name "TRASMIRAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.03203902608516 ;
+        schema:longitude -7.62077317315681
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.03203902608516,-7.62077317315681" .
+
+<http://example/place/242>
+    rdf:type schema:Place ;
+    schema:name "TRAZO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.02376079247874 ;
+        schema:longitude -8.565342915923415
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.02376079247874,-8.565342915923415" .
+
+<http://example/place/243>
+    rdf:type schema:Place ;
+    schema:name "TRIACASTELA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.7681411499259 ;
+        schema:longitude -7.230566622887052
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.7681411499259,-7.230566622887052" .
+
+<http://example/place/244>
+    rdf:type schema:Place ;
+    schema:name "TUI" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.09367267489639 ;
+        schema:longitude -8.643390221403221
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.09367267489639,-8.643390221403221" .
+
+<http://example/place/245>
+    rdf:type schema:Place ;
+    schema:name "VAL DO DUBRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.03758659145401 ;
+        schema:longitude -8.645406090683194
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.03758659145401,-8.645406090683194" .
+
+<http://example/place/246>
+    rdf:type schema:Place ;
+    schema:name "VALDOVINO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.58932641300895 ;
+        schema:longitude -8.161473335779615
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.58932641300895,-8.161473335779615" .
+
+<http://example/place/247>
+    rdf:type schema:Place ;
+    schema:name "VALGA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.66017006273579 ;
+        schema:longitude -8.64713991359037
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.66017006273579,-8.64713991359037" .
+
+<http://example/place/248>
+    rdf:type schema:Place ;
+    schema:name "VEDRA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.81797775859024 ;
+        schema:longitude -8.474895431694524
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.81797775859024,-8.474895431694524" .
+
+<http://example/place/249>
+    rdf:type schema:Place ;
+    schema:name "VEREA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.11533508097537 ;
+        schema:longitude -7.970311372652574
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.11533508097537,-7.970311372652574" .
+
+<http://example/place/250>
+    rdf:type schema:Place ;
+    schema:name "VERIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.94199429449593 ;
+        schema:longitude -7.438160297085576
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.94199429449593,-7.438160297085576" .
+
+<http://example/place/251>
+    rdf:type schema:Place ;
+    schema:name "VIANA DO BOLO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.16494576398493 ;
+        schema:longitude -7.098234442640712
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.16494576398493,-7.098234442640712" .
+
+<http://example/place/252>
+    rdf:type schema:Place ;
+    schema:name "VIGO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.21763182242981 ;
+        schema:longitude -8.71057037593946
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.21763182242981,-8.71057037593946" .
+
+<http://example/place/253>
+    rdf:type schema:Place ;
+    schema:name "VILA DE CRUCES" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.794436716464354 ;
+        schema:longitude -8.197939922275413
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.794436716464354,-8.197939922275413" .
+
+<http://example/place/254>
+    rdf:type schema:Place ;
+    schema:name "VILABOA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.348596744190914 ;
+        schema:longitude -8.663528227518718
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.348596744190914,-8.663528227518718" .
+
+<http://example/place/255>
+    rdf:type schema:Place ;
+    schema:name "VILAGARCIA DE AROUSA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.60970477867474 ;
+        schema:longitude -8.746851828570207
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.60970477867474,-8.746851828570207" .
+
+<http://example/place/256>
+    rdf:type schema:Place ;
+    schema:name "VILALBA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.31668007621506 ;
+        schema:longitude -7.655063733731772
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.316680076215064,-7.655063733731772" .
+
+<http://example/place/257>
+    rdf:type schema:Place ;
+    schema:name "VILAMARIN" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.47025440113254 ;
+        schema:longitude -7.889207981795595
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.47025440113254,-7.889207981795595" .
+
+<http://example/place/258>
+    rdf:type schema:Place ;
+    schema:name "VILAMARTIN DE VALDEORRAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.45005553867116 ;
+        schema:longitude -7.074781661207137
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.45005553867116,-7.074781661207137" .
+
+<http://example/place/259>
+    rdf:type schema:Place ;
+    schema:name "VILANOVA DE AROUSA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.54810814552999 ;
+        schema:longitude -8.771222202558652
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.54810814552999,-8.771222202558652" .
+
+<http://example/place/260>
+    rdf:type schema:Place ;
+    schema:name "VILAR DE BARRIO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.20376245569299 ;
+        schema:longitude -7.597438097069705
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.20376245569299,-7.597438097069705" .
+
+<http://example/place/261>
+    rdf:type schema:Place ;
+    schema:name "VILAR DE SANTOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.11002522078542 ;
+        schema:longitude -7.808077207051976
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.11002522078542,-7.808077207051976" .
+
+<http://example/place/262>
+    rdf:type schema:Place ;
+    schema:name "VILARDEVOS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 41.92379218391965 ;
+        schema:longitude -7.333235190652857
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...841.92379218391965,-7.333235190652857" .
+
+<http://example/place/263>
+    rdf:type schema:Place ;
+    schema:name "VILARINO DE CONSO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.17374624675603 ;
+        schema:longitude -7.24957613641977
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.17374624675603,-7.24957613641977" .
+
+<http://example/place/264>
+    rdf:type schema:Place ;
+    schema:name "VILARMAIOR" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.35955806078304 ;
+        schema:longitude -8.131628937034847
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.359558060783044,-8.131628937034847" .
+
+<http://example/place/265>
+    rdf:type schema:Place ;
+    schema:name "VILASANTAR" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.07444638554645 ;
+        schema:longitude -8.08750357141259
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.07444638554645,-8.08750357141259" .
+
+<http://example/place/266>
+    rdf:type schema:Place ;
+    schema:name "VIMIANZO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.10371617096632 ;
+        schema:longitude -9.029814654857391
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.103716170966315,-9.029814654857391" .
+
+<http://example/place/267>
+    rdf:type schema:Place ;
+    schema:name "VIVEIRO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.61949243486916 ;
+        schema:longitude -7.589817078197113
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.61949243486916,-7.589817078197113" .
+
+<http://example/place/268>
+    rdf:type schema:Place ;
+    schema:name "XERMADE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.36216145097018 ;
+        schema:longitude -7.805545251117435
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.36216145097018,-7.805545251117435" .
+
+<http://example/place/269>
+    rdf:type schema:Place ;
+    schema:name "XINZO DE LIMIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.04059200871934 ;
+        schema:longitude -7.702135878552338
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.04059200871934,-7.702135878552338" .
+
+<http://example/place/270>
+    rdf:type schema:Place ;
+    schema:name "XOVE" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.66922683615319 ;
+        schema:longitude -7.517542727112504
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.669226836153186,-7.517542727112504" .
+
+<http://example/place/271>
+    rdf:type schema:Place ;
+    schema:name "XUNQUEIRA DE AMBIA" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.17631377295263 ;
+        schema:longitude -7.716182050062079
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.176313772952625,-7.716182050062079" .
+
+<http://example/place/272>
+    rdf:type schema:Place ;
+    schema:name "XUNQUEIRA DE ESPADANEDO" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 42.32826242556796 ;
+        schema:longitude -7.666025823766679
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...842.32826242556796,-7.666025823766679" .
+
+<http://example/place/273>
+    rdf:type schema:Place ;
+    schema:name "ZAS" ;
+    schema:geo [
+        rdf:type schema:GeoCoordinates ;
+        schema:latitude 43.079077107702645 ;
+        schema:longitude -8.897541354647116
+    ] ;
+    schema:hasMap "https://www.google.com/maps?q=...843.079077107702645,-8.897541354647116" .
+
