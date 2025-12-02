@@ -499,6 +499,61 @@
     </hop>
   </order>
   <step>
+    <name>BINNING SUPERFICIE</name>
+    <type>NumberRange</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <inputField>superficie</inputField>
+    <outputField>superficie_bin</outputField>
+    <fallBackValue>unknown</fallBackValue>
+    <rules>
+      <rule>
+        <lower_bound>0.0</lower_bound>
+        <upper_bound>5.0</upper_bound>
+        <value>PEQUEÑO</value>
+      </rule>
+      <rule>
+        <lower_bound>5.0</lower_bound>
+        <upper_bound>100.0</upper_bound>
+        <value>MEDIANO</value>
+      </rule>
+      <rule>
+        <lower_bound>100.0</lower_bound>
+        <upper_bound>1000.0</upper_bound>
+        <value>GRANDE</value>
+      </rule>
+      <rule>
+        <lower_bound>1000.0</lower_bound>
+        <upper_bound>25000.0</upper_bound>
+        <value>MUY GRANDE</value>
+      </rule>
+      <rule>
+        <lower_bound>25000.0</lower_bound>
+        <upper_bound>10000.0</upper_bound>
+        <value>EXTREMO</value>
+      </rule>
+    </rules>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1072</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Búsqueda en flujo de datos</name>
     <type>StreamLookup</type>
     <description/>
@@ -1548,7 +1603,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1664</xloc>
+      <xloc>1600</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1567,71 +1622,54 @@
     <fields>
       <field>
         <name>superficie</name>
-        <rename/>
       </field>
       <field>
         <name>fecha</name>
-        <rename/>
       </field>
       <field>
         <name>id</name>
-        <rename/>
       </field>
       <field>
         <name>lat</name>
-        <rename/>
       </field>
       <field>
         <name>lng</name>
-        <rename/>
       </field>
       <field>
         <name>idprovincia</name>
-        <rename/>
       </field>
       <field>
         <name>municipio</name>
-        <rename/>
       </field>
       <field>
         <name>causa</name>
-        <rename/>
       </field>
       <field>
         <name>causa_supuesta</name>
-        <rename/>
       </field>
       <field>
         <name>causa_desc</name>
-        <rename/>
       </field>
       <field>
         <name>muertos</name>
-        <rename/>
       </field>
       <field>
         <name>heridos</name>
-        <rename/>
       </field>
       <field>
         <name>time_ctrl</name>
-        <rename/>
       </field>
       <field>
         <name>time_ext</name>
-        <rename/>
       </field>
       <field>
         <name>personal</name>
-        <rename/>
       </field>
       <field>
         <name>medios</name>
-        <rename/>
       </field>
       <field>
         <name>gastos</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1663,87 +1701,66 @@
     <fields>
       <field>
         <name>id</name>
-        <rename/>
       </field>
       <field>
         <name>fecha</name>
-        <rename/>
       </field>
       <field>
         <name>estacion</name>
-        <rename/>
       </field>
       <field>
         <name>superficie</name>
-        <rename/>
       </field>
       <field>
         <name>superficie_bin</name>
-        <rename/>
       </field>
       <field>
         <name>lat</name>
-        <rename/>
       </field>
       <field>
         <name>lng</name>
-        <rename/>
       </field>
       <field>
         <name>municipio</name>
-        <rename/>
       </field>
       <field>
         <name>provincia</name>
-        <rename/>
       </field>
       <field>
         <name>muertos</name>
-        <rename/>
       </field>
       <field>
         <name>heridos</name>
-        <rename/>
       </field>
       <field>
         <name>time_ctrl</name>
-        <rename/>
       </field>
       <field>
         <name>time_ext</name>
-        <rename/>
       </field>
       <field>
         <name>personal</name>
-        <rename/>
       </field>
       <field>
         <name>medios</name>
-        <rename/>
       </field>
       <field>
         <name>gastos</name>
-        <rename/>
       </field>
       <field>
         <name>Temperatura_Maxima</name>
-        <rename/>
       </field>
       <field>
         <name>Temperatura_Minima</name>
-        <rename/>
       </field>
       <field>
         <name>Velocidad_Media_Km_h</name>
-        <rename/>
       </field>
       <field>
         <name>Precipitacion_lm2</name>
-        <rename/>
       </field>
       <field>
         <name>intencionado</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -1807,7 +1824,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1488</xloc>
+      <xloc>1424</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1833,15 +1850,18 @@
 
 function limpiar(texto) {
   if (!texto) return "";
-  
+
   // elimina acentos
   texto = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  
+
   // ñ → n
   texto = texto.replace(/ñ/g, "n").replace(/Ñ/g, "N");
 
-  // eliminar múltiples espacios
+  // eliminar múltiples espacios (primero los reducimos)
   texto = texto.replace(/\s+/g, " ");
+
+  // sustituir espacio por barra baja
+  texto = texto.replace(/ /g, "_");
 
   return texto.trim();
 }
@@ -1919,62 +1939,7 @@ estacion = crear_estacion(fecha)</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1280</xloc>
-      <yloc>256</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>BINNING SUPERFICIE</name>
-    <type>NumberRange</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <inputField>superficie</inputField>
-    <outputField>superficie_bin</outputField>
-    <fallBackValue>unknown</fallBackValue>
-    <rules>
-      <rule>
-        <lower_bound>0.0</lower_bound>
-        <upper_bound>5.0</upper_bound>
-        <value>PEQUEÑO</value>
-      </rule>
-      <rule>
-        <lower_bound>5.0</lower_bound>
-        <upper_bound>100.0</upper_bound>
-        <value>MEDIANO</value>
-      </rule>
-      <rule>
-        <lower_bound>100.0</lower_bound>
-        <upper_bound>1000.0</upper_bound>
-        <value>GRANDE</value>
-      </rule>
-      <rule>
-        <lower_bound>1000.0</lower_bound>
-        <upper_bound>25000.0</upper_bound>
-        <value>MUY GRANDE</value>
-      </rule>
-      <rule>
-        <lower_bound>25000.0</lower_bound>
-        <upper_bound>10000.0</upper_bound>
-        <value>EXTREMO</value>
-      </rule>
-    </rules>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1072</xloc>
+      <xloc>1232</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
