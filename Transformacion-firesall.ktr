@@ -488,13 +488,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>limpiar strings y añadir estacion</from>
-      <to>Selecciona/Renombra valores 2</to>
+      <from>BINNING SUPERFICIE</from>
+      <to>limpiar strings y añadir estacion</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>BINNING SUPERFICIE</from>
-      <to>limpiar strings y añadir estacion</to>
+      <from>limpiar strings y añadir estacion</from>
+      <to>Data validator</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Data validator</from>
+      <to>Selecciona/Renombra valores 2</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -1603,7 +1608,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1600</xloc>
+      <xloc>1696</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1824,7 +1829,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1424</xloc>
+      <xloc>1504</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1940,6 +1945,90 @@ estacion = crear_estacion(fecha)</jsScript_script>
     </remotesteps>
     <GUI>
       <xloc>1232</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Data validator</name>
+    <type>Validator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <validate_all>N</validate_all>
+    <concat_errors>N</concat_errors>
+    <concat_separator>|</concat_separator>
+    <validator_field>
+      <name>lat</name>
+      <validation_name>validar_latitud</validation_name>
+      <max_length/>
+      <min_length/>
+      <null_allowed>Y</null_allowed>
+      <only_null_allowed>N</only_null_allowed>
+      <only_numeric_allowed>N</only_numeric_allowed>
+      <data_type>Number</data_type>
+      <data_type_verified>Y</data_type_verified>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <max_value>90</max_value>
+      <min_value>-90</min_value>
+      <start_string/>
+      <end_string/>
+      <start_string_not_allowed/>
+      <end_string_not_allowed/>
+      <regular_expression/>
+      <regular_expression_not_allowed/>
+      <error_code>LAT_RANGE</error_code>
+      <error_description>Latitud fuera de rango</error_description>
+      <is_sourcing_values>N</is_sourcing_values>
+      <sourcing_step/>
+      <sourcing_field/>
+      <allowed_value/>
+    </validator_field>
+    <validator_field>
+      <name>lng</name>
+      <validation_name>validar_longitud</validation_name>
+      <max_length/>
+      <min_length/>
+      <null_allowed>Y</null_allowed>
+      <only_null_allowed>N</only_null_allowed>
+      <only_numeric_allowed>N</only_numeric_allowed>
+      <data_type>Number</data_type>
+      <data_type_verified>Y</data_type_verified>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <max_value>180</max_value>
+      <min_value>-180</min_value>
+      <start_string/>
+      <end_string/>
+      <start_string_not_allowed/>
+      <end_string_not_allowed/>
+      <regular_expression/>
+      <regular_expression_not_allowed/>
+      <error_code>LNG_RANGE</error_code>
+      <error_description>Longitud fuera de rango</error_description>
+      <is_sourcing_values>N</is_sourcing_values>
+      <sourcing_step/>
+      <sourcing_field/>
+      <allowed_value/>
+    </validator_field>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1376</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
