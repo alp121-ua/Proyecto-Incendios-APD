@@ -57,7 +57,7 @@ for _, row in df_incendios.iterrows():
         {location_triple}
         schema:identifier "{row['id']}" ;
         schema:startDate "{row['fecha']}";
-        schema:description "Intencion: {INTENCION} \n           Superficie quemada: {row['superficie_bin']}\n           Estacion: {row['estacion']}";
+        schema:description "Intencion: {INTENCION} Superficie quemada: {row['superficie_bin']} Estacion: {row['estacion']}";
         schema:geo [
             a schema:GeoCoordinates ;
             schema:latitude {row['lat']};
