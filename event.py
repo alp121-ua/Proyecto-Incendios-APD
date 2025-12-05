@@ -4,7 +4,7 @@ df_incendios = pd.read_csv('data/fires_all_transformado.csv')
 
 municipios_dict = {}
 
-with open("municipios_schema.ttl", "r", encoding="utf-8") as f:
+with open("municipios_schema_enriched.ttl", "r", encoding="utf-8") as f:
     lines = f.readlines()
 
 
