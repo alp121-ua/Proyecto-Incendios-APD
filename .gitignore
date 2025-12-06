@@ -1,0 +1,70 @@
+# ---- ARCHIVOS DE PYTHON ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de Cython
+*.c
+*.so
+
+# ---- ENTORNOS VIRTUALES ----
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# ---- PAQUETES / DEPENDENCIAS ----
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+pip-wheel-metadata/
+
+# ---- CONFIGURACIÓN / CACHE ----
+*.log
+*.pot
+*.pyproj
+*.pyo
+*.pyd
+*.sqlite3
+.db.sqlite3
+*.db
+
+# Caches de herramientas
+.mypy_cache/
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+__pypackages__/
+
+# ---- JUPYTER NOTEBOOKS ----
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# ---- EDITORES ----
+# VSCode
+.vscode/
+.code-workspace
+
+# JetBrains
+.idea/
+
+# ---- SISTEMA ----
+.DS_Store
+Thumbs.db
+
+# ---- OTROS ----
+# Archivos sensibles
+*.env
+*.key
+*.pem
+*.crt
+credentials.json
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
