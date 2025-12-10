@@ -2,102 +2,115 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import folium
-from folium.plugins import HeatMap
+from folium.plugins import HeatMap, FastMarkerCluster
 import os
 
-# Nombre del archivo (asegúrate de que esté en la misma carpeta o ajusta la ruta)
+
 archivo_datos = 'data/fires_all_transformado.csv'
+nombre_graficos = 'estadisticas_incendios_completo.png'
+nombre_mapa = 'mapa_incendios_final.html'
 
-# 1. CARGAR DATOS
-# ---------------------------------------------------------
-if os.path.exists(archivo_datos):
-    print(f"Cargando datos de {archivo_datos}...")
-    # CORRECCIÓN: Este archivo usa comas (sep=',') por defecto
+
+print(f"Cargando datos de {archivo_datos}...")
+
+if not os.path.exists(archivo_datos):
+    print(f"ERROR: No encuentro el archivo '{archivo_datos}'. Verifica la ruta.")
+    exit()
+
+try:
     df = pd.read_csv(archivo_datos)
-else:
-    # Intento de cargar desde carpeta data/ si no está en la raíz
-    df = pd.read_csv(f'data/{archivo_datos}')
+    df['fecha'] = pd.to_datetime(df['fecha'], dayfirst=True)
+    
+    df_map = df.dropna(subset=['lat', 'lng'])
+    print(f"Datos cargados correctamente: {len(df)} registros total.")
 
-# CORRECCIÓN: dayfirst=True es crucial para fechas europeas (DD/MM/YYYY)
-df['fecha'] = pd.to_datetime(df['fecha'], dayfirst=True)
+except Exception as e:
+    print(f"Error crítico cargando datos: {e}")
+    exit()
 
-# Configurar el estilo de los gráficos
+
+print("Generando panel de estadísticas...")
+
 sns.set_theme(style="whitegrid")
-plt.figure(figsize=(15, 12))
+plt.figure(figsize=(12, 18)) 
 
-# 2. GRÁFICO 1: TOP 10 MUNICIPIOS CON MÁS INCENDIOS
-# ---------------------------------------------------------
-print("Generando gráfico de municipios...")
-plt.subplot(2, 1, 1)
 
+plt.subplot(3, 1, 1)
 top_municipios = df['municipio'].value_counts().head(10)
-
-# Graficar
 barplot = sns.barplot(
     x=top_municipios.values, 
     y=top_municipios.index, 
     hue=top_municipios.index, 
     palette="viridis", 
-    legend=False # Si da error en versiones antiguas, borrar esta línea
+    legend=False
 )
-plt.title('Top 10 Municipios con más Incendios', fontsize=16)
-plt.xlabel('Número de Incendios')
-plt.ylabel('Municipio')
-
-# Etiquetas de valor
-for i, v in enumerate(top_municipios.values):
-    barplot.text(v + 0.5, i, str(v), color='black', va='center')
+plt.title('Top 10 Municipios con más Incendios', fontsize=15)
+plt.xlabel('Cantidad de Incendios')
+plt.bar_label(barplot.containers[0], padding=3)
 
 
-# 3. GRÁFICO 2: EVOLUCIÓN TEMPORAL
-# ---------------------------------------------------------
-print("Generando gráfico temporal...")
-plt.subplot(2, 1, 2)
+plt.subplot(3, 1, 2)
 
-# Agrupar por mes ('ME' es Month End en pandas nuevo, 'M' en antiguos)
 try:
-    incendios_por_mes = df.set_index('fecha').resample('ME').size()
+    incendios_mes = df.set_index('fecha').resample('ME').size()
 except ValueError:
-    incendios_por_mes = df.set_index('fecha').resample('M').size()
+    incendios_mes = df.set_index('fecha').resample('M').size()
 
-incendios_por_mes.plot(kind='line', color='#d62728', linewidth=2, marker='o')
-plt.title('Evolución de Incendios a lo largo del tiempo', fontsize=16)
+incendios_mes.plot(kind='line', color='#d62728', linewidth=1.5)
+plt.title('Evolución Histórica de Incendios', fontsize=15)
 plt.xlabel('Fecha')
+plt.ylabel('Cantidad')
+plt.grid(True, linestyle='--', alpha=0.5)
+
+plt.subplot(3, 1, 3)
+
+
+conteo_estacion = df['estacion'].value_counts()
+
+sns.barplot(
+    x=conteo_estacion.index, 
+    y=conteo_estacion.values, 
+    hue=conteo_estacion.index,
+    palette="magma", 
+    legend=False
+)
+plt.title('Distribución de Incendios por Estación del Año', fontsize=15)
+plt.xlabel('Estación')
 plt.ylabel('Cantidad de Incendios')
-plt.grid(True, linestyle='--', alpha=0.7)
+
+
+for i, v in enumerate(conteo_estacion.values):
+    plt.text(i, v + 50, str(v), ha='center', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('estadisticas_incendios.png')
-print("Gráfico 'estadisticas_incendios.png' guardado.")
+plt.savefig(nombre_graficos)
+print(f"Gráficos guardados en '{nombre_graficos}'")
 
 
-# 4. GRÁFICO 3: MAPA DE CALOR INTERACTIVO
-# ---------------------------------------------------------
 print("Generando mapa interactivo...")
 
-# Limpiar datos: eliminar filas sin coordenadas
-df_map = df.dropna(subset=['lat', 'lng'])
-
 if not df_map.empty:
-    # Centrar el mapa en el promedio de las coordenadas de los incendios
-    mapa = folium.Map(location=[df_map['lat'].mean(), df_map['lng'].mean()], zoom_start=9)
+    centro_lat = df_map['lat'].mean()
+    centro_lng = df_map['lng'].mean()
+    
+    mapa = folium.Map(location=[centro_lat, centro_lng], zoom_start=8, tiles='CartoDB positron')
 
-    # Capa de Calor
+    
+    print(" - Añadiendo capa de calor...")
     heat_data = df_map[['lat', 'lng']].values.tolist()
-    HeatMap(heat_data, radius=15, blur=10).add_to(mapa)
+    HeatMap(heat_data, radius=14, blur=18, name="Mapa de Calor").add_to(mapa)
 
-    # Opcional: Marcadores (limitado a los últimos 500 para no saturar el mapa si son muchos)
-    # Si quieres ver TODOS, quita el .head(500)
-    for _, row in df_map.head(500).iterrows():
-        folium.CircleMarker(
-            location=[row['lat'], row['lng']],
-            radius=2,
-            color='red',
-            fill=True,
-            popup=f"{row['municipio']} ({row['fecha'].date()})"
-        ).add_to(mapa)
+    
+    print(f" - Añadiendo {len(df_map)} puntos al mapa...")
+    puntos_cluster = df_map[['lat', 'lng']].values.tolist()
+    
+    FastMarkerCluster(
+        puntos_cluster,
+        name="Puntos (Agrupados)",
+    ).add_to(mapa)
 
-    mapa.save('mapa_incendios.html')
-    print("Mapa 'mapa_incendios.html' guardado.")
+    folium.LayerControl().add_to(mapa)
+    mapa.save(nombre_mapa)
+    print(f"Mapa guardado en '{nombre_mapa}'.")
 else:
-    print("No hay datos de coordenadas válidos.")
+    print("No hay datos válidos para el mapa.")
