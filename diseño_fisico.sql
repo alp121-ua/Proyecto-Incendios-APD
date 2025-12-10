@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`DIM_Fecha` (
   `Dia` INT NULL,
   `Mes` INT NULL,
   `Año` INT NULL,
+  `Estacion` VARCHAR(45) NULL,
   PRIMARY KEY (`idDIM_Fecha`))
 ENGINE = InnoDB;
 
@@ -37,21 +38,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`DIM_Ubicacion` (
   `Provincia` VARCHAR(45) NULL,
   `Latitud` INT NULL,
   `Longitud` INT NULL,
-  `Tipo_suelo` VARCHAR(45) NULL,
-  `Poblacion_total` INT NULL,
-  `Poblacion>65` INT NULL,
   PRIMARY KEY (`idDIM_Ubicacion`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`DIM_Causa`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`DIM_Causa` (
-  `idDIM_Causa` INT NOT NULL,
-  `Cod_Causa` INT NULL,
-  `Causa_Detalle` VARCHAR(45) NULL,
-  PRIMARY KEY (`idDIM_Causa`))
 ENGINE = InnoDB;
 
 
@@ -63,8 +50,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`DIM_CLIMA` (
   `Temp_Max` INT NULL,
   `Temp_Min` INT NULL,
   `Viento (Km/h)` INT NULL,
-  ` Humedad(%)` INT NULL,
-  `Dias secos acumulados` INT NULL,
+  `Precipitaciones (L/m^2)` INT NULL,
   PRIMARY KEY (`idDIM_CLIMA`))
 ENGINE = InnoDB;
 
@@ -77,7 +63,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`HECHO_INCENDIO` (
   `FK_Fecha` INT NOT NULL,
   `FK_Ubicacion` INT NOT NULL,
   `FK_Clima` INT NOT NULL,
-  `FK_Causa` INT NOT NULL,
   `Superficie_total(Ha)` INT NULL,
   `Tiempo_extinción` INT NULL,
   `Num_muertos` INT NULL,
@@ -87,11 +72,10 @@ CREATE TABLE IF NOT EXISTS `mydb`.`HECHO_INCENDIO` (
   `Personal` INT NULL,
   `Medios` INT NULL,
   `Gastos` INT NULL,
-  `Perdidas_econom` INT NULL,
+  `Intencionado` INT NULL,
   PRIMARY KEY (`idHECHO_INCENDIO`),
   INDEX `id_Ubicacion_idx` (`FK_Ubicacion` ASC) VISIBLE,
   INDEX `FK_Fecha_idx` (`FK_Fecha` ASC) VISIBLE,
-  INDEX `FK_Causa_idx` (`FK_Causa` ASC) VISIBLE,
   INDEX `FK_Clima_idx` (`FK_Clima` ASC) VISIBLE,
   CONSTRAINT `FK_Fecha`
     FOREIGN KEY (`FK_Fecha`)
@@ -101,11 +85,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`HECHO_INCENDIO` (
   CONSTRAINT `FK_Ubicacion`
     FOREIGN KEY (`FK_Ubicacion`)
     REFERENCES `mydb`.`DIM_Ubicacion` (`idDIM_Ubicacion`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `FK_Causa`
-    FOREIGN KEY (`FK_Causa`)
-    REFERENCES `mydb`.`DIM_Causa` (`idDIM_Causa`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `FK_Clima`
