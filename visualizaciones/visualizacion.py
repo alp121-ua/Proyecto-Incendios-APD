@@ -6,7 +6,7 @@ from folium.plugins import HeatMap, FastMarkerCluster
 import os
 
 
-archivo_datos = 'data/fires_all_transformado.csv'
+archivo_datos = '..data/fires_all_transformado.csv'
 nombre_graficos = 'estadisticas_incendios_completo.png'
 nombre_mapa = 'mapa_incendios_final.html'
 

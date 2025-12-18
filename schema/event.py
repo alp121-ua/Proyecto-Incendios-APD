@@ -1,6 +1,6 @@
 import pandas as pd
 
-df_incendios = pd.read_csv('data/fires_all_transformado.csv')
+df_incendios = pd.read_csv('..data/fires_all_transformado.csv')
 
 municipios_dict = {}
 
