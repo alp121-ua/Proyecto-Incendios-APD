@@ -56,7 +56,7 @@ def get_wikidata_uri(municipio_raw):
 # -------------------------------------------
 
 # 1. Cargar datos
-df = pd.read_csv('data/municipios_incendios_maps.csv', sep=';')
+df = pd.read_csv('..data/municipios_incendios_maps.csv', sep=';')
 
 # 2. Limpieza
 df['municipio'] = df['municipio'].astype(str).str.strip()
