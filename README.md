@@ -91,8 +91,8 @@ cd Proyecto-Incendios-APD
    - Abrir PDI Spoon
    - Cargar y ejecutar jobs desde `transformaciones/indendios-job1.ktl`
 
-```
-```
+
+
 ## Licencia
 
 Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
@@ -104,4 +104,3 @@ Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICE
 3. **Vocabulario RDF**: [schema.org](https://schema.org/)
 4. **Herramienta ETL**: [Pentaho Data Integration](https://www.hitachivantara.com/en-us/products/data-management-analytics/pentaho-platform/data-integration.html)
 
-```
