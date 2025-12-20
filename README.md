@@ -1,41 +1,28 @@
-# 🔥 Proyecto de Análisis y Predicción de Incendios Forestales en Galicia
+# Proyecto de Análisis y Predicción de Incendios Forestales en Galicia
 
 [![Estado](https://img.shields.io/badge/Estado-Completado-success)](https://github.com/alp121-ua/Proyecto-Incendios-APD)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](LICENSE)
 [![Asignatura](https://img.shields.io/badge/Asignatura-APD_2025-ff69b4)](https://www.ua.es/)
 
-**Repositorio:** https://github.com/alp121-ua/Proyecto-Incendios-APD
-
 Proyecto desarrollado para la asignatura **Adquisición y Preparación de Datos (APD)** del Grado en Ingeniería en Inteligencia Artificial de la Universidad de Alicante. Análisis integral de incendios forestales en Galicia mediante técnicas de procesamiento de datos, transformación RDF y visualización avanzada.
 
-## 📋 Índice
-- [Descripción del Proyecto](#descripción-del-proyecto)
-- [Objetivos](#objetivos)
-- [Estructura del Repositorio](#estructura-del-repositorio)
-- [Tecnologías y Herramientas](#tecnologías-y-herramientas)
-- [Metodología](#metodología)
-- [Resultados y Visualizaciones](#resultados-y-visualizaciones)
-- [Instalación y Uso](#instalación-y-uso)
-- [Equipo](#equipo)
-- [Licencia](#licencia)
-
-## 🎯 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto aborda el **análisis predictivo de incendios forestales** en la comunidad de Galicia, combinando datos históricos de incendios con variables meteorológicas para identificar patrones, factores de riesgo y apoyar la toma de decisiones en prevención y gestión de emergencias.
 
-### 📊 Preguntas de Investigación
+### Preguntas de Investigación
 - ¿Dónde se producen los incendios y cuáles son las zonas de mayor prevalencia?
 - ¿Han aumentado o disminuido los incendios en los últimos años?
 - ¿Qué proporción de incendios son intencionados?
 - ¿Cómo influyen los factores climatológicos y la época del año en la severidad de los incendios?
 
-### 👥 Partes Interesadas
+### Partes Interesadas
 - **Cuerpos de bomberos forestales** y Unidades Militares de Emergencia (UME)
 - **Agencias de protección civil** (MITECO, Xunta de Galicia)
 - **Investigadores medioambientales**
 - **Ciudadanía en zonas urbano-forestales**
 
-## 🎯 Objetivos
+## Objetivos
 
 1. **Localizar, adquirir e integrar** fuentes de datos fiables sobre incendios forestales
 2. **Estandarizar, limpiar y transformar** los datos utilizando Pentaho Data Integration
@@ -44,7 +31,7 @@ Este proyecto aborda el **análisis predictivo de incendios forestales** en la c
 5. **Crear visualizaciones interactivas** para análisis exploratorio
 6. **Identificar patrones y factores de riesgo** para prevención de incendios
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 Proyecto-Incendios-APD/
@@ -76,19 +63,14 @@ Proyecto-Incendios-APD/
 
 ### **Procesamiento de Datos**
 - Pentaho Data Integration - ETL principal
-- Python - Procesamiento adicional
-- MySQL - Almacén de datos
+- Pandas - Procesamiento adicional
+- MySQL Workbench - Almacén de datos
 
 ### **Desarrollo y Visualización**
-- Jupyter Notebook - Análisis exploratorio
-- Plotly - Visualizaciones interactivas
 - RDF/schema.org - Transformación semántica
+- Folium - Visualizaciones interactivas
 
-### **Gestión de Proyecto**
-- Git - Control de versiones
-- GitHub - Alojamiento del repositorio
-
-## 📊 Metodología
+## Metodología
 
 ### **1. Adquisición de Datos**
 - **Incendios forestales**: Dataset "Todos los incendios forestales" de Civio (datos del Ministerio)
@@ -116,25 +98,9 @@ Proyecto-Incendios-APD/
 - **Análisis temporal**: Evolución de incendios por año y estación
 - **Dashboard**: Integración de múltiples perspectivas de análisis
 
-## 📈 Resultados y Visualizaciones
-
-### **Visualización 1: Mapa de Distribución de Incendios**
-- **Tecnología**: Plotly + Mapbox
-- **Características**:
-  - Puntos geolocalizados de incendios por provincia
-  - Tamaño proporcional a la superficie quemada
-  - Filtros por año y tipo de incendio
-  - Capas de densidad para identificar zonas críticas
-
-### **Visualización 2: Análisis Temporal y Causal**
-- **Tecnología**: Plotly + Dash
-- **Características**:
-  - Evolución anual del número de incendios
-  - Distribución por estaciones del año
-  - Análisis de causas (intencionados vs. no intencionados)
-  - Correlación con variables meteorológicas
-
-## 🚀 Instalación y Uso
+## Resultados y Visualizaciones
+![alt text](visualizaciones/estadisticas_incendios_completo.png)
+## Instalación y Uso
 
 ### **Requisitos Previos**
 - Java JDK 8+
@@ -149,50 +115,14 @@ Proyecto-Incendios-APD/
 git clone https://github.com/alp121-ua/Proyecto-Incendios-APD.git
 cd Proyecto-Incendios-APD
 ```
-
-2. **Configurar base de datos MySQL:**
-```bash
-mysql -u root -p < database/esquema_fisico.sql
-```
-
-3. **Ejecutar transformaciones Pentaho:**
+2. **Ejecutar transformaciones Pentaho:**
    - Abrir PDI Spoon
-   - Cargar y ejecutar jobs desde `etl/jobs/`
+   - Cargar y ejecutar jobs desde `transformaciones/indendios-job1.ktl`
 
-4. **Generar datos RDF:**
-```bash
-pip install -r requirements.txt
-python src/rdf_generator.py
 ```
 
-5. **Ejecutar visualizaciones:**
-```bash
-cd visualizations
-python -m http.server 8000
-# Abrir navegador en http://localhost:8000
-```
 
-### **Ejecución Completa con Job Principal**
-El flujo de trabajo principal está definido en `etl/jobs/MAIN_JOB.kjb` e incluye:
-1. Extracción de datos crudos
-2. Limpieza y transformación
-3. Carga al almacén de datos
-4. Generación de RDF
-5. Creación de visualizaciones
-
-## 👥 Equipo
-
-**Grupo APD - Universidad de Alicante**
-- **Miembro 1** - Rol principal
-- **Miembro 2** - Rol principal  
-- **Miembro 3** - Rol principal
-- **Miembro 4** - Rol principal
-
-**Asignatura**: Adquisición y Preparación de Datos (APD)
-**Curso**: 2025
-**Profesor**: [Nombre del profesor]
-
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
@@ -203,17 +133,3 @@ Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICE
 3. **Vocabulario RDF**: [schema.org](https://schema.org/)
 4. **Herramienta ETL**: [Pentaho Data Integration](https://www.hitachivantara.com/en-us/products/data-management-analytics/pentaho-platform/data-integration.html)
 5. **Documentación técnica completa**: Disponible en `docs/MEMORIA_AYPD.docx`
-
----
-
-<div align="center">
-  <sub>Desarrollado con ❤️ para la asignatura APD - Universidad de Alicante 2025</sub>
-</div>
-
----
-
-**Nota**: Este README.md está listo para copiar y pegar directamente en tu repositorio. Solo necesitas:
-1. Reemplazar `[Nombre del profesor]` por el nombre real
-2. Reemplazar `[Miembro X]` por los nombres reales del equipo
-3. Asegurarte de que la estructura de carpetas coincide con la descrita
-4. Añadir el archivo LICENSE si aún no existe
