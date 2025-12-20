@@ -97,7 +97,7 @@ cd Proyecto-Incendios-APD
 
 Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## 🔗 Referencias y Recursos
+## Referencias y Recursos
 
 1. **Fuente de datos incendios**: [Civio - Todos los incendios forestales](https://datos.civio.es/dataset/todos-los-incendios-forestales/)
 2. **Fuente de datos climáticos**: [Datosclima.es](https://datosclima.es/)
