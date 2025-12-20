@@ -13,7 +13,6 @@ Este proyecto aborda el **análisis predictivo de incendios forestales** en la c
 ### Preguntas de Investigación
 - ¿Dónde se producen los incendios y cuáles son las zonas de mayor prevalencia?
 - ¿Han aumentado o disminuido los incendios en los últimos años?
-- ¿Qué proporción de incendios son intencionados?
 - ¿Cómo influyen los factores climatológicos y la época del año en la severidad de los incendios?
 
 ### Partes Interesadas
@@ -72,7 +71,7 @@ Este proyecto aborda el **análisis predictivo de incendios forestales** en la c
 - **Dashboard**: Integración de múltiples perspectivas de análisis
 
 ## Resultados y Visualizaciones
-![alt text](visualizaciones/estadisticas_incendios_completo.png)
+![alt text](visualizaciones/dashboard.png)
 ## Instalación y Uso
 
 ### **Requisitos Previos**
