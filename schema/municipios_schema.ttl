@@ -1,12 +1,14 @@
-@prefix :       <http://127.0.0.1:3333/> .
+@prefix :      <http://127.0.0.1:3333/> .
 @prefix ex:     <http://example/> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
 
 <http://example/place/0>
     rdf:type schema:Place ;
     schema:name "ABADIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q304757> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.34660661778932 ;
@@ -17,6 +19,7 @@
 <http://example/place/1>
     rdf:type schema:Place ;
     schema:name "ABEGONDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q318323> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.20414918365819 ;
@@ -27,6 +30,7 @@
 <http://example/place/2>
     rdf:type schema:Place ;
     schema:name "AGOLADA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12382538> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.78107643166891 ;
@@ -37,6 +41,7 @@
 <http://example/place/3>
     rdf:type schema:Place ;
     schema:name "ALFOZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1633648> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.53135915890202 ;
@@ -47,6 +52,7 @@
 <http://example/place/4>
     rdf:type schema:Place ;
     schema:name "ALLARIZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1438879> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.20137238652676 ;
@@ -57,6 +63,7 @@
 <http://example/place/5>
     rdf:type schema:Place ;
     schema:name "AMES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1353997> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.88559213318949 ;
@@ -67,6 +74,7 @@
 <http://example/place/6>
     rdf:type schema:Place ;
     schema:name "AMOEIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627616> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.39278944003297 ;
@@ -77,6 +85,7 @@
 <http://example/place/7>
     rdf:type schema:Place ;
     schema:name "ANTAS DE ULLA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368972> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.76834429765943 ;
@@ -87,6 +96,7 @@
 <http://example/place/8>
     rdf:type schema:Place ;
     schema:name "ARANGA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1113417> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.23395773717049 ;
@@ -97,6 +107,7 @@
 <http://example/place/9>
     rdf:type schema:Place ;
     schema:name "ARBO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q630031> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.13384928653794 ;
@@ -107,6 +118,7 @@
 <http://example/place/10>
     rdf:type schema:Place ;
     schema:name "ARES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17416> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.45228172721681 ;
@@ -117,6 +129,7 @@
 <http://example/place/11>
     rdf:type schema:Place ;
     schema:name "ARTEIXO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q996161> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.31067431136755 ;
@@ -127,6 +140,7 @@
 <http://example/place/12>
     rdf:type schema:Place ;
     schema:name "ARZUA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q651676> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.93015325126144 ;
@@ -137,6 +151,7 @@
 <http://example/place/13>
     rdf:type schema:Place ;
     schema:name "AVION" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q791209> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.37979923051917 ;
@@ -147,6 +162,7 @@
 <http://example/place/14>
     rdf:type schema:Place ;
     schema:name "BAIONA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q748867> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.109957714376414 ;
@@ -157,6 +173,7 @@
 <http://example/place/15>
     rdf:type schema:Place ;
     schema:name "BALEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1596039> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.03910507036433 ;
@@ -167,6 +184,7 @@
 <http://example/place/16>
     rdf:type schema:Place ;
     schema:name "BALTAR" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627554> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.95719265192343 ;
@@ -177,6 +195,7 @@
 <http://example/place/17>
     rdf:type schema:Place ;
     schema:name "BANDE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1645000> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.045648449944025 ;
@@ -187,6 +206,7 @@
 <http://example/place/18>
     rdf:type schema:Place ;
     schema:name "BANOS DE MOLGAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1632922> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.23246801525441 ;
@@ -197,6 +217,7 @@
 <http://example/place/19>
     rdf:type schema:Place ;
     schema:name "BARALLA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1633465> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.89868181044194 ;
@@ -207,6 +228,7 @@
 <http://example/place/20>
     rdf:type schema:Place ;
     schema:name "BARBADAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627578> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.31918965756526 ;
@@ -217,6 +239,7 @@
 <http://example/place/21>
     rdf:type schema:Place ;
     schema:name "BARREIROS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1634820> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.49176633085179 ;
@@ -227,6 +250,7 @@
 <http://example/place/22>
     rdf:type schema:Place ;
     schema:name "BARRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1645010> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.489334039219386 ;
@@ -237,6 +261,7 @@
 <http://example/place/23>
     rdf:type schema:Place ;
     schema:name "BEADE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1644988> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.33023271265802 ;
@@ -247,6 +272,7 @@
 <http://example/place/24>
     rdf:type schema:Place ;
     schema:name "BEARIZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627591> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.48253638312729 ;
@@ -257,6 +283,7 @@
 <http://example/place/25>
     rdf:type schema:Place ;
     schema:name "BECERREA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1596031> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.909324184298896 ;
@@ -267,6 +294,7 @@
 <http://example/place/26>
     rdf:type schema:Place ;
     schema:name "BEGONTE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q959803> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.14745712226887 ;
@@ -277,6 +305,7 @@
 <http://example/place/27>
     rdf:type schema:Place ;
     schema:name "BERGONDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q644018> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.31744223644728 ;
@@ -287,6 +316,7 @@
 <http://example/place/28>
     rdf:type schema:Place ;
     schema:name "BETANZOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q671341> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.27152808302045 ;
@@ -297,6 +327,7 @@
 <http://example/place/29>
     rdf:type schema:Place ;
     schema:name "BOBORAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627596> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.44421306903402 ;
@@ -307,6 +338,7 @@
 <http://example/place/30>
     rdf:type schema:Place ;
     schema:name "BOIMORTO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q692787> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.01054061204069 ;
@@ -317,6 +349,7 @@
 <http://example/place/31>
     rdf:type schema:Place ;
     schema:name "BOIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q735282> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.70112038923246 ;
@@ -327,6 +360,7 @@
 <http://example/place/32>
     rdf:type schema:Place ;
     schema:name "BOQUEIXON-CASANOVA" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.83141446239088 ;
@@ -337,6 +371,7 @@
 <http://example/place/33>
     rdf:type schema:Place ;
     schema:name "BOVEDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606539> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.64674684089045 ;
@@ -347,6 +382,7 @@
 <http://example/place/34>
     rdf:type schema:Place ;
     schema:name "BRION" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.84326997955816 ;
@@ -357,6 +393,7 @@
 <http://example/place/35>
     rdf:type schema:Place ;
     schema:name "BUEU" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1632909> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.32681648421821 ;
@@ -367,6 +404,7 @@
 <http://example/place/36>
     rdf:type schema:Place ;
     schema:name "BURELA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1619456> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.66192928341184 ;
@@ -377,6 +415,7 @@
 <http://example/place/37>
     rdf:type schema:Place ;
     schema:name "CABANA DE BERGANTINOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368763> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.19599260970328 ;
@@ -387,6 +426,7 @@
 <http://example/place/38>
     rdf:type schema:Place ;
     schema:name "CABANAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q974129> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.45969274089288 ;
@@ -397,6 +437,7 @@
 <http://example/place/39>
     rdf:type schema:Place ;
     schema:name "CALDAS DE REIS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1448886> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.61098080767344 ;
@@ -407,6 +448,7 @@
 <http://example/place/40>
     rdf:type schema:Place ;
     schema:name "CALVOS DE RANDIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q777044> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.95638425678369 ;
@@ -417,6 +459,7 @@
 <http://example/place/41>
     rdf:type schema:Place ;
     schema:name "CAMARINAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1373985> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.16835673523996 ;
@@ -427,6 +470,7 @@
 <http://example/place/42>
     rdf:type schema:Place ;
     schema:name "CAMBADOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q695477> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.503891115290784 ;
@@ -437,6 +481,7 @@
 <http://example/place/43>
     rdf:type schema:Place ;
     schema:name "CAMBRE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1113375> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.276936598368174 ;
@@ -447,6 +492,7 @@
 <http://example/place/44>
     rdf:type schema:Place ;
     schema:name "CAMPO LAMEIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607577> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.51799906527108 ;
@@ -457,6 +503,7 @@
 <http://example/place/45>
     rdf:type schema:Place ;
     schema:name "CANGAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628188> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.27864140665148 ;
@@ -467,6 +514,7 @@
 <http://example/place/46>
     rdf:type schema:Place ;
     schema:name "CARBALLEDA DE AVIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q940960> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.32457110767516 ;
@@ -477,6 +525,7 @@
 <http://example/place/47>
     rdf:type schema:Place ;
     schema:name "CARBALLEDA DE VALDEORRAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607709> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.35826902261327 ;
@@ -487,6 +536,7 @@
 <http://example/place/48>
     rdf:type schema:Place ;
     schema:name "CARBALLEDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1444347> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.526947549011545 ;
@@ -497,6 +547,7 @@
 <http://example/place/49>
     rdf:type schema:Place ;
     schema:name "CARBALLO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q166137> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.20199355325462 ;
@@ -507,6 +558,7 @@
 <http://example/place/50>
     rdf:type schema:Place ;
     schema:name "CARINO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1403988> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.7497396316899 ;
@@ -517,6 +569,7 @@
 <http://example/place/51>
     rdf:type schema:Place ;
     schema:name "CARNOTA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368813> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.85073644466812 ;
@@ -527,6 +580,7 @@
 <http://example/place/52>
     rdf:type schema:Place ;
     schema:name "CARRAL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q601352> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.20629034648925 ;
@@ -537,6 +591,7 @@
 <http://example/place/53>
     rdf:type schema:Place ;
     schema:name "CARTELLE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606020> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.23760542226177 ;
@@ -547,6 +602,7 @@
 <http://example/place/54>
     rdf:type schema:Place ;
     schema:name "CASTRELO DE MINO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605406> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.28916606764597 ;
@@ -557,6 +613,7 @@
 <http://example/place/55>
     rdf:type schema:Place ;
     schema:name "CASTRELO DO VAL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607748> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.05499276544971 ;
@@ -567,6 +624,7 @@
 <http://example/place/56>
     rdf:type schema:Place ;
     schema:name "CASTRO CALDELAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607646> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.37262975041858 ;
@@ -577,6 +635,7 @@
 <http://example/place/57>
     rdf:type schema:Place ;
     schema:name "CASTRO DE REI" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368876> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.16777126459176 ;
@@ -587,6 +646,7 @@
 <http://example/place/58>
     rdf:type schema:Place ;
     schema:name "CASTROVERDE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368794> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.0347909488066 ;
@@ -597,6 +657,7 @@
 <http://example/place/59>
     rdf:type schema:Place ;
     schema:name "CATOIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12385821> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.65645143829202 ;
@@ -607,6 +668,7 @@
 <http://example/place/60>
     rdf:type schema:Place ;
     schema:name "CEDEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1113395> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.69110245344204 ;
@@ -617,6 +679,7 @@
 <http://example/place/61>
     rdf:type schema:Place ;
     schema:name "CEE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q988707> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.99095532228923 ;
@@ -627,6 +690,7 @@
 <http://example/place/62>
     rdf:type schema:Place ;
     schema:name "CELANOVA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605505> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.17117832565519 ;
@@ -637,6 +701,7 @@
 <http://example/place/63>
     rdf:type schema:Place ;
     schema:name "CENLLE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607762> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.34901979321002 ;
@@ -647,6 +712,7 @@
 <http://example/place/64>
     rdf:type schema:Place ;
     schema:name "CERCEDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5762501> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.17553022377688 ;
@@ -657,6 +723,7 @@
 <http://example/place/65>
     rdf:type schema:Place ;
     schema:name "CERDEDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631759> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.53796871325989 ;
@@ -667,6 +734,7 @@
 <http://example/place/66>
     rdf:type schema:Place ;
     schema:name "CERDIDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q678870> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.60804607856763 ;
@@ -677,6 +745,7 @@
 <http://example/place/67>
     rdf:type schema:Place ;
     schema:name "CERVANTES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1603003> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.798643400680085 ;
@@ -687,6 +756,7 @@
 <http://example/place/68>
     rdf:type schema:Place ;
     schema:name "CERVO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616622> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.66279736485999 ;
@@ -697,6 +767,7 @@
 <http://example/place/69>
     rdf:type schema:Place ;
     schema:name "CESURAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12386026> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.16861809517117 ;
@@ -707,6 +778,7 @@
 <http://example/place/70>
     rdf:type schema:Place ;
     schema:name "CHANDREXA DE QUEIXA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628152> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.26679361187832 ;
@@ -717,6 +789,7 @@
 <http://example/place/71>
     rdf:type schema:Place ;
     schema:name "CHANTADA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1447512> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.61518676379485 ;
@@ -727,6 +800,7 @@
 <http://example/place/72>
     rdf:type schema:Place ;
     schema:name "COIROS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q527259> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.24392966608781 ;
@@ -737,6 +811,7 @@
 <http://example/place/73>
     rdf:type schema:Place ;
     schema:name "COLES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605474> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.404530493321566 ;
@@ -747,6 +822,7 @@
 <http://example/place/74>
     rdf:type schema:Place ;
     schema:name "CORCUBION" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q581367> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.92893045339988 ;
@@ -757,6 +833,7 @@
 <http://example/place/75>
     rdf:type schema:Place ;
     schema:name "CORISTANCO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1369028> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.15234272957318 ;
@@ -767,6 +844,7 @@
 <http://example/place/76>
     rdf:type schema:Place ;
     schema:name "CORTEGADA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1645016> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.211241182572266 ;
@@ -777,6 +855,7 @@
 <http://example/place/77>
     rdf:type schema:Place ;
     schema:name "COSPEITO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1445401> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.22160746768425 ;
@@ -787,6 +866,7 @@
 <http://example/place/78>
     rdf:type schema:Place ;
     schema:name "COTOBADE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q661657> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.47508550757125 ;
@@ -797,6 +877,7 @@
 <http://example/place/79>
     rdf:type schema:Place ;
     schema:name "COVELO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q305392> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.26296863729824 ;
@@ -807,6 +888,7 @@
 <http://example/place/80>
     rdf:type schema:Place ;
     schema:name "CRECENTE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627605> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.18243281531171 ;
@@ -817,6 +899,7 @@
 <http://example/place/81>
     rdf:type schema:Place ;
     schema:name "CUALEDRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q601546> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.98465597964602 ;
@@ -827,6 +910,7 @@
 <http://example/place/82>
     rdf:type schema:Place ;
     schema:name "CULLEREDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1113450> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.27589368669853 ;
@@ -837,6 +921,7 @@
 <http://example/place/83>
     rdf:type schema:Place ;
     schema:name "CUNTIS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631860> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.62844919682385 ;
@@ -847,6 +932,7 @@
 <http://example/place/84>
     rdf:type schema:Place ;
     schema:name "CURTIS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1373939> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.144207977072526 ;
@@ -857,6 +943,7 @@
 <http://example/place/85>
     rdf:type schema:Place ;
     schema:name "DODRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368913> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.74809349789255 ;
@@ -867,6 +954,7 @@
 <http://example/place/86>
     rdf:type schema:Place ;
     schema:name "DOZON" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1614585> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.5698899197014 ;
@@ -877,6 +965,7 @@
 <http://example/place/87>
     rdf:type schema:Place ;
     schema:name "DUMBRIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q549319> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.99117054370897 ;
@@ -887,6 +976,7 @@
 <http://example/place/88>
     rdf:type schema:Place ;
     schema:name "ENTRIMO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606243> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.96009571606478 ;
@@ -897,6 +987,7 @@
 <http://example/place/89>
     rdf:type schema:Place ;
     schema:name "ESGOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607520> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.34062432181868 ;
@@ -907,6 +998,7 @@
 <http://example/place/90>
     rdf:type schema:Place ;
     schema:name "FENE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1374025> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.46965720986176 ;
@@ -917,6 +1009,7 @@
 <http://example/place/91>
     rdf:type schema:Place ;
     schema:name "FERROL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q485329> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.508045919845486 ;
@@ -927,6 +1020,7 @@
 <http://example/place/92>
     rdf:type schema:Place ;
     schema:name "FISTERRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q732090> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.92757042237438 ;
@@ -937,6 +1031,7 @@
 <http://example/place/93>
     rdf:type schema:Place ;
     schema:name "FOLGOSO DO COUREL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1447369> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.64394067765716 ;
@@ -947,6 +1042,7 @@
 <http://example/place/94>
     rdf:type schema:Place ;
     schema:name "FORCAREI" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q385667> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.59925680457116 ;
@@ -957,6 +1053,7 @@
 <http://example/place/95>
     rdf:type schema:Place ;
     schema:name "FORNELOS DE MONTES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q525124> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.32897309875901 ;
@@ -967,6 +1064,7 @@
 <http://example/place/96>
     rdf:type schema:Place ;
     schema:name "FOZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q917878> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.5974630158459 ;
@@ -977,6 +1075,7 @@
 <http://example/place/97>
     rdf:type schema:Place ;
     schema:name "FRADES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616172> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.07890612251515 ;
@@ -987,6 +1086,7 @@
 <http://example/place/98>
     rdf:type schema:Place ;
     schema:name "FRIOL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q576916> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.044369285997945 ;
@@ -997,6 +1097,7 @@
 <http://example/place/99>
     rdf:type schema:Place ;
     schema:name "GOMESENDE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631823> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.19856946401429 ;
@@ -1007,6 +1108,7 @@
 <http://example/place/100>
     rdf:type schema:Place ;
     schema:name "GONDOMAR" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607596> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.123850385254975 ;
@@ -1017,6 +1119,7 @@
 <http://example/place/101>
     rdf:type schema:Place ;
     schema:name "GUITIRIZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1602975> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.21616502805657 ;
@@ -1027,6 +1130,7 @@
 <http://example/place/102>
     rdf:type schema:Place ;
     schema:name "GUNTIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605449> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.904678329763634 ;
@@ -1037,6 +1141,7 @@
 <http://example/place/103>
     rdf:type schema:Place ;
     schema:name "IRIXOA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1620170> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.28745767623226 ;
@@ -1047,6 +1152,7 @@
 <http://example/place/104>
     rdf:type schema:Place ;
     schema:name "LALIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1374736> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.653388507217 ;
@@ -1057,6 +1163,7 @@
 <http://example/place/105>
     rdf:type schema:Place ;
     schema:name "LANCARA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1445304> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.83977435637647 ;
@@ -1067,6 +1174,7 @@
 <http://example/place/106>
     rdf:type schema:Place ;
     schema:name "LAROUCO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631787> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.35162107562728 ;
@@ -1077,6 +1185,7 @@
 <http://example/place/107>
     rdf:type schema:Place ;
     schema:name "LAXE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1620185> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.18488668518013 ;
@@ -1087,6 +1196,7 @@
 <http://example/place/108>
     rdf:type schema:Place ;
     schema:name "LAZA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631843> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.12670795790747 ;
@@ -1097,6 +1207,7 @@
 <http://example/place/109>
     rdf:type schema:Place ;
     schema:name "LEIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607634> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.38053088224996 ;
@@ -1107,6 +1218,7 @@
 <http://example/place/110>
     rdf:type schema:Place ;
     schema:name "LOBEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1644975> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.01046521892248 ;
@@ -1117,6 +1229,7 @@
 <http://example/place/111>
     rdf:type schema:Place ;
     schema:name "LOBIOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606028> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.91253892262018 ;
@@ -1127,6 +1240,7 @@
 <http://example/place/112>
     rdf:type schema:Place ;
     schema:name "LOURENZA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1447358> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.460908082092885 ;
@@ -1137,6 +1251,7 @@
 <http://example/place/113>
     rdf:type schema:Place ;
     schema:name "LOUSAME" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1450842> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.77889400019492 ;
@@ -1147,6 +1262,7 @@
 <http://example/place/114>
     rdf:type schema:Place ;
     schema:name "LUGO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11125> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.01095745548157 ;
@@ -1157,6 +1273,7 @@
 <http://example/place/115>
     rdf:type schema:Place ;
     schema:name "MACEDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1617896> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.2580080498534 ;
@@ -1167,6 +1284,7 @@
 <http://example/place/116>
     rdf:type schema:Place ;
     schema:name "MALPICA DE BERGANTINOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q596761> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.28977003061251 ;
@@ -1177,6 +1295,7 @@
 <http://example/place/117>
     rdf:type schema:Place ;
     schema:name "MANON" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.6266037926031 ;
@@ -1187,6 +1306,7 @@
 <http://example/place/118>
     rdf:type schema:Place ;
     schema:name "MANZANEDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2878033> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.28075048117412 ;
@@ -1197,6 +1317,7 @@
 <http://example/place/119>
     rdf:type schema:Place ;
     schema:name "MARIN" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.34371921627962 ;
@@ -1207,6 +1328,7 @@
 <http://example/place/120>
     rdf:type schema:Place ;
     schema:name "MASIDE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605484> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.42225985895255 ;
@@ -1217,6 +1339,7 @@
 <http://example/place/121>
     rdf:type schema:Place ;
     schema:name "MAZARICOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442814> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.93475713978711 ;
@@ -1227,6 +1350,7 @@
 <http://example/place/122>
     rdf:type schema:Place ;
     schema:name "MEANO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607447> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.45355904053122 ;
@@ -1237,6 +1361,7 @@
 <http://example/place/123>
     rdf:type schema:Place ;
     schema:name "MEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1618958> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.22168080547426 ;
@@ -1247,6 +1372,7 @@
 <http://example/place/124>
     rdf:type schema:Place ;
     schema:name "MEIS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q32438> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.49228473027814 ;
@@ -1257,6 +1383,7 @@
 <http://example/place/125>
     rdf:type schema:Place ;
     schema:name "MELIDE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q912514> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.93057485615344 ;
@@ -1267,6 +1394,7 @@
 <http://example/place/126>
     rdf:type schema:Place ;
     schema:name "MELON" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1644993> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.291788878000574 ;
@@ -1277,6 +1405,7 @@
 <http://example/place/127>
     rdf:type schema:Place ;
     schema:name "MESIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606528> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.10689236619817 ;
@@ -1287,6 +1416,7 @@
 <http://example/place/128>
     rdf:type schema:Place ;
     schema:name "MINO" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.37429216664552 ;
@@ -1297,6 +1427,7 @@
 <http://example/place/129>
     rdf:type schema:Place ;
     schema:name "MOANA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1617430> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.32744605051329 ;
@@ -1307,6 +1438,7 @@
 <http://example/place/130>
     rdf:type schema:Place ;
     schema:name "MOECHE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442682> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.53254070536678 ;
@@ -1317,6 +1449,7 @@
 <http://example/place/131>
     rdf:type schema:Place ;
     schema:name "MONDARIZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q639229> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.25830649993234 ;
@@ -1327,6 +1460,7 @@
 <http://example/place/132>
     rdf:type schema:Place ;
     schema:name "MONDARIZ-BALNEARIO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20545774> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.22350285568547 ;
@@ -1337,6 +1471,7 @@
 <http://example/place/133>
     rdf:type schema:Place ;
     schema:name "MONDONEDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q840362> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.43678011597304 ;
@@ -1347,6 +1482,7 @@
 <http://example/place/134>
     rdf:type schema:Place ;
     schema:name "MONFERO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442860> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.3159812484709 ;
@@ -1357,6 +1493,7 @@
 <http://example/place/135>
     rdf:type schema:Place ;
     schema:name "MONFORTE DE LEMOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q818341> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.52724223745145 ;
@@ -1367,6 +1504,7 @@
 <http://example/place/136>
     rdf:type schema:Place ;
     schema:name "MONTEDERRAMO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606231> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.29312316812814 ;
@@ -1377,6 +1515,7 @@
 <http://example/place/137>
     rdf:type schema:Place ;
     schema:name "MONTERREI" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1452663> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.96597086483153 ;
@@ -1387,6 +1526,7 @@
 <http://example/place/138>
     rdf:type schema:Place ;
     schema:name "MONTERROSO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1122290> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.83129879441007 ;
@@ -1397,6 +1537,7 @@
 <http://example/place/139>
     rdf:type schema:Place ;
     schema:name "MORANA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607494> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.57840020426996 ;
@@ -1407,6 +1548,7 @@
 <http://example/place/140>
     rdf:type schema:Place ;
     schema:name "MOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1596023> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.20725019710542 ;
@@ -1417,6 +1559,7 @@
 <http://example/place/141>
     rdf:type schema:Place ;
     schema:name "MUGARDOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442847> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.45795396703214 ;
@@ -1427,6 +1570,7 @@
 <http://example/place/142>
     rdf:type schema:Place ;
     schema:name "MUINOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607719> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.95276396946981 ;
@@ -1437,6 +1581,7 @@
 <http://example/place/143>
     rdf:type schema:Place ;
     schema:name "MURAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605428> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.47391145979205 ;
@@ -1447,6 +1592,7 @@
 <http://example/place/144>
     rdf:type schema:Place ;
     schema:name "MUROS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q578957> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.81116864745091 ;
@@ -1457,6 +1603,7 @@
 <http://example/place/145>
     rdf:type schema:Place ;
     schema:name "MUXIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q512940> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.05644344357761 ;
@@ -1467,6 +1614,7 @@
 <http://example/place/146>
     rdf:type schema:Place ;
     schema:name "NARON" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368896> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.53786631381024 ;
@@ -1477,6 +1625,7 @@
 <http://example/place/147>
     rdf:type schema:Place ;
     schema:name "NAVIA DE SUARNA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1445393> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.97921401569541 ;
@@ -1487,6 +1636,7 @@
 <http://example/place/148>
     rdf:type schema:Place ;
     schema:name "NEDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1635664> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.50779974423211 ;
@@ -1497,6 +1647,7 @@
 <http://example/place/149>
     rdf:type schema:Place ;
     schema:name "NEGREIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q840787> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.9135795530212 ;
@@ -1507,6 +1658,7 @@
 <http://example/place/150>
     rdf:type schema:Place ;
     schema:name "NEGUEIRA DE MUNIZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1603054> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.14072645597474 ;
@@ -1517,6 +1669,7 @@
 <http://example/place/151>
     rdf:type schema:Place ;
     schema:name "NIGRAN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1617562> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.14446241881305 ;
@@ -1527,6 +1680,7 @@
 <http://example/place/152>
     rdf:type schema:Place ;
     schema:name "NOGUEIRA DE RAMUIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q577578> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.41060632989215 ;
@@ -1537,6 +1691,7 @@
 <http://example/place/153>
     rdf:type schema:Place ;
     schema:name "NOIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q818601> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.79889198275029 ;
@@ -1547,6 +1702,7 @@
 <http://example/place/154>
     rdf:type schema:Place ;
     schema:name "OIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1644565> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.02095344024327 ;
@@ -1557,6 +1713,7 @@
 <http://example/place/155>
     rdf:type schema:Place ;
     schema:name "OIMBRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q523774> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.89469423626635 ;
@@ -1567,6 +1724,7 @@
 <http://example/place/156>
     rdf:type schema:Place ;
     schema:name "OLEIROS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q688611> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.37038574790769 ;
@@ -1577,6 +1735,7 @@
 <http://example/place/157>
     rdf:type schema:Place ;
     schema:name "ORDES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442661> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.10816528805361 ;
@@ -1587,6 +1746,7 @@
 <http://example/place/158>
     rdf:type schema:Place ;
     schema:name "OROSO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q924131> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.00287083711041 ;
@@ -1597,6 +1757,7 @@
 <http://example/place/159>
     rdf:type schema:Place ;
     schema:name "ORTIGUEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1375842> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.62152512384404 ;
@@ -1607,6 +1768,7 @@
 <http://example/place/160>
     rdf:type schema:Place ;
     schema:name "OTRA PROVINCIA" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.53227195757975 ;
@@ -1617,6 +1779,7 @@
 <http://example/place/161>
     rdf:type schema:Place ;
     schema:name "OURENSE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q99151> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.35024880448896 ;
@@ -1627,6 +1790,7 @@
 <http://example/place/162>
     rdf:type schema:Place ;
     schema:name "OUROL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1445352> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.56495403964042 ;
@@ -1637,6 +1801,7 @@
 <http://example/place/163>
     rdf:type schema:Place ;
     schema:name "OUTEIRO DE REI" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q643709> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.09476911906209 ;
@@ -1647,6 +1812,7 @@
 <http://example/place/164>
     rdf:type schema:Place ;
     schema:name "OUTES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q936870> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.86862227743112 ;
@@ -1657,6 +1823,7 @@
 <http://example/place/165>
     rdf:type schema:Place ;
     schema:name "OZA DOS RIOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6392795> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.19875172411424 ;
@@ -1667,6 +1834,7 @@
 <http://example/place/166>
     rdf:type schema:Place ;
     schema:name "OZA-CESURAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13423086> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.20169541484777 ;
@@ -1677,6 +1845,7 @@
 <http://example/place/167>
     rdf:type schema:Place ;
     schema:name "PADERNE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q426243> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.29573848747511 ;
@@ -1687,6 +1856,7 @@
 <http://example/place/168>
     rdf:type schema:Place ;
     schema:name "PADERNE DE ALLARIZ" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1445723> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.28354554229533 ;
@@ -1697,6 +1867,7 @@
 <http://example/place/169>
     rdf:type schema:Place ;
     schema:name "PADRENDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607736> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.1264978972872 ;
@@ -1707,6 +1878,7 @@
 <http://example/place/170>
     rdf:type schema:Place ;
     schema:name "PADRON" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q500494> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.76379722459826 ;
@@ -1717,6 +1889,7 @@
 <http://example/place/171>
     rdf:type schema:Place ;
     schema:name "PALAS DE REI" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12397020> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.90399496343213 ;
@@ -1727,6 +1900,7 @@
 <http://example/place/172>
     rdf:type schema:Place ;
     schema:name "PANTON" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1447446> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.499817714226566 ;
@@ -1737,6 +1911,7 @@
 <http://example/place/173>
     rdf:type schema:Place ;
     schema:name "PARADA DE SIL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1632841> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.370339004303226 ;
@@ -1747,6 +1922,7 @@
 <http://example/place/174>
     rdf:type schema:Place ;
     schema:name "PARADELA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q431456> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.73815230746991 ;
@@ -1757,6 +1933,7 @@
 <http://example/place/175>
     rdf:type schema:Place ;
     schema:name "PAZOS DE BORBEN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1614595> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.29690286258028 ;
@@ -1767,6 +1944,7 @@
 <http://example/place/176>
     rdf:type schema:Place ;
     schema:name "PEDRAFITA DO CEBREIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q967734> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.694805051796905 ;
@@ -1777,6 +1955,7 @@
 <http://example/place/177>
     rdf:type schema:Place ;
     schema:name "PETIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q670366> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.37881658529691 ;
@@ -1787,6 +1966,7 @@
 <http://example/place/178>
     rdf:type schema:Place ;
     schema:name "PINOR" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q934212> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.53402834852156 ;
@@ -1797,6 +1977,7 @@
 <http://example/place/179>
     rdf:type schema:Place ;
     schema:name "POIO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631776> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.44699166057879 ;
@@ -1807,6 +1988,7 @@
 <http://example/place/180>
     rdf:type schema:Place ;
     schema:name "POL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1445717> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.153694281473285 ;
@@ -1817,6 +1999,7 @@
 <http://example/place/181>
     rdf:type schema:Place ;
     schema:name "PONTE CALDELAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631751> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.39048319648981 ;
@@ -1827,6 +2010,7 @@
 <http://example/place/182>
     rdf:type schema:Place ;
     schema:name "PONTEAREAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q617119> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.19132197915469 ;
@@ -1837,6 +2021,7 @@
 <http://example/place/183>
     rdf:type schema:Place ;
     schema:name "PONTECESO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1450823> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.26584274407828 ;
@@ -1847,6 +2032,7 @@
 <http://example/place/184>
     rdf:type schema:Place ;
     schema:name "PONTECESURES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627584> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.721803164201205 ;
@@ -1857,6 +2043,7 @@
 <http://example/place/185>
     rdf:type schema:Place ;
     schema:name "PONTEDEUME" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q765283> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.403435370239656 ;
@@ -1867,6 +2054,7 @@
 <http://example/place/186>
     rdf:type schema:Place ;
     schema:name "PONTEDEVA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628449> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.17740392482357 ;
@@ -1877,6 +2065,7 @@
 <http://example/place/187>
     rdf:type schema:Place ;
     schema:name "PONTEVEDRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12411> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.423639805969 ;
@@ -1887,6 +2076,7 @@
 <http://example/place/188>
     rdf:type schema:Place ;
     schema:name "PORQUEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631352> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.03948323291132 ;
@@ -1897,6 +2087,7 @@
 <http://example/place/189>
     rdf:type schema:Place ;
     schema:name "PORTAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631280> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.573229480846905 ;
@@ -1907,6 +2098,7 @@
 <http://example/place/190>
     rdf:type schema:Place ;
     schema:name "PORTO DO SON" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9093944> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.68860185044302 ;
@@ -1917,6 +2109,7 @@
 <http://example/place/191>
     rdf:type schema:Place ;
     schema:name "PORTOMARIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q849319> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.80966599159964 ;
@@ -1927,6 +2120,7 @@
 <http://example/place/192>
     rdf:type schema:Place ;
     schema:name "PORTUGAL" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.93828511947184 ;
@@ -1937,6 +2131,7 @@
 <http://example/place/193>
     rdf:type schema:Place ;
     schema:name "PUNXIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q605311> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.38073908925272 ;
@@ -1947,6 +2142,7 @@
 <http://example/place/194>
     rdf:type schema:Place ;
     schema:name "QUINTELA DE LEIRADO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1630324> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.12759135307275 ;
@@ -1957,6 +2153,7 @@
 <http://example/place/195>
     rdf:type schema:Place ;
     schema:name "QUIROGA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q969128> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.48671391288768 ;
@@ -1967,6 +2164,7 @@
 <http://example/place/196>
     rdf:type schema:Place ;
     schema:name "RABADE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1444243> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.13168654030847 ;
@@ -1977,6 +2175,7 @@
 <http://example/place/197>
     rdf:type schema:Place ;
     schema:name "RAIRIZ DE VEIGA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q542228> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.10904186499938 ;
@@ -1987,6 +2186,7 @@
 <http://example/place/198>
     rdf:type schema:Place ;
     schema:name "RAMIRAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q605058> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.18492891124112 ;
@@ -1997,6 +2197,7 @@
 <http://example/place/199>
     rdf:type schema:Place ;
     schema:name "REDONDELA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q833032> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.2857751595759 ;
@@ -2007,6 +2208,7 @@
 <http://example/place/200>
     rdf:type schema:Place ;
     schema:name "RIANXO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q835911> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.69074577456052 ;
@@ -2017,6 +2219,7 @@
 <http://example/place/201>
     rdf:type schema:Place ;
     schema:name "RIBADAVIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q917180> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.29310900904334 ;
@@ -2027,6 +2230,7 @@
 <http://example/place/202>
     rdf:type schema:Place ;
     schema:name "RIBADEO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q824076> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.51952832773459 ;
@@ -2037,6 +2241,7 @@
 <http://example/place/203>
     rdf:type schema:Place ;
     schema:name "RIBADUMIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1631321> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.54056720239237 ;
@@ -2047,6 +2252,7 @@
 <http://example/place/204>
     rdf:type schema:Place ;
     schema:name "RIBAS DE SIL" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q387385> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.44058774141899 ;
@@ -2057,6 +2263,7 @@
 <http://example/place/205>
     rdf:type schema:Place ;
     schema:name "RIBEIRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q904130> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.597056765878015 ;
@@ -2067,6 +2274,7 @@
 <http://example/place/206>
     rdf:type schema:Place ;
     schema:name "RIBEIRA DE PIQUIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q961868> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.183246329119626 ;
@@ -2077,6 +2285,7 @@
 <http://example/place/207>
     rdf:type schema:Place ;
     schema:name "RIOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1645023> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.97411564167685 ;
@@ -2087,6 +2296,7 @@
 <http://example/place/208>
     rdf:type schema:Place ;
     schema:name "RIOTORTO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442159> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.31026899864666 ;
@@ -2097,6 +2307,7 @@
 <http://example/place/209>
     rdf:type schema:Place ;
     schema:name "RODEIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627583> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.64486737457623 ;
@@ -2107,6 +2318,7 @@
 <http://example/place/210>
     rdf:type schema:Place ;
     schema:name "ROIS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442533> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.80603371488319 ;
@@ -2117,6 +2329,7 @@
 <http://example/place/211>
     rdf:type schema:Place ;
     schema:name "RUBIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q516631> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.462704772045896 ;
@@ -2127,6 +2340,7 @@
 <http://example/place/212>
     rdf:type schema:Place ;
     schema:name "SADA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616081> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.35762333484959 ;
@@ -2137,6 +2351,7 @@
 <http://example/place/213>
     rdf:type schema:Place ;
     schema:name "SALCEDA DE CASELAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1629594> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.10994548045167 ;
@@ -2147,6 +2362,7 @@
 <http://example/place/214>
     rdf:type schema:Place ;
     schema:name "SALVATERRA DE MINO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1629539> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.12927686787352 ;
@@ -2157,6 +2373,7 @@
 <http://example/place/215>
     rdf:type schema:Place ;
     schema:name "SAMOS" ;
+
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.72881963078911 ;
@@ -2167,6 +2384,7 @@
 <http://example/place/216>
     rdf:type schema:Place ;
     schema:name "SAN AMARO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1606281> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.383053709246894 ;
@@ -2177,6 +2395,7 @@
 <http://example/place/217>
     rdf:type schema:Place ;
     schema:name "SAN CIBRAO DAS VINAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q973465> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.2837371779665 ;
@@ -2187,6 +2406,7 @@
 <http://example/place/218>
     rdf:type schema:Place ;
     schema:name "SAN CRISTOVO DE CEA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1603760> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.50660439393493 ;
@@ -2197,6 +2417,7 @@
 <http://example/place/219>
     rdf:type schema:Place ;
     schema:name "SAN SADURNINO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442511> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.51658541967822 ;
@@ -2207,6 +2428,7 @@
 <http://example/place/220>
     rdf:type schema:Place ;
     schema:name "SAN XOAN DE RIO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1641513> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.391712909696665 ;
@@ -2217,6 +2439,7 @@
 <http://example/place/221>
     rdf:type schema:Place ;
     schema:name "SANDIAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q910396> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.14668435427938 ;
@@ -2227,6 +2450,7 @@
 <http://example/place/222>
     rdf:type schema:Place ;
     schema:name "SANTA COMBA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442500> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.0647778934907 ;
@@ -2237,6 +2461,7 @@
 <http://example/place/223>
     rdf:type schema:Place ;
     schema:name "SANTIAGO DE COMPOSTELA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q14314> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.91054891753242 ;
@@ -2247,6 +2472,7 @@
 <http://example/place/224>
     rdf:type schema:Place ;
     schema:name "SANTISO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442623> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.86979436648806 ;
@@ -2257,6 +2483,7 @@
 <http://example/place/225>
     rdf:type schema:Place ;
     schema:name "SANXENXO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q840355> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.41986243939749 ;
@@ -2267,6 +2494,7 @@
 <http://example/place/226>
     rdf:type schema:Place ;
     schema:name "SARREAUS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607778> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.11720548663372 ;
@@ -2277,6 +2505,7 @@
 <http://example/place/227>
     rdf:type schema:Place ;
     schema:name "SARRIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q174833> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.76615671114038 ;
@@ -2287,6 +2516,7 @@
 <http://example/place/228>
     rdf:type schema:Place ;
     schema:name "SILLEDA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607540> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.6787510180588 ;
@@ -2297,6 +2527,7 @@
 <http://example/place/229>
     rdf:type schema:Place ;
     schema:name "SOBER" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442183> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.43368573600263 ;
@@ -2307,6 +2538,7 @@
 <http://example/place/230>
     rdf:type schema:Place ;
     schema:name "SOBRADO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q644626> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.05188481464597 ;
@@ -2317,6 +2549,7 @@
 <http://example/place/231>
     rdf:type schema:Place ;
     schema:name "SOUTOMAIOR" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628271> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.33184492439988 ;
@@ -2327,6 +2560,7 @@
 <http://example/place/232>
     rdf:type schema:Place ;
     schema:name "TABOADA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10972189> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.71490961631064 ;
@@ -2337,6 +2571,7 @@
 <http://example/place/233>
     rdf:type schema:Place ;
     schema:name "TABOADELA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q970921> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.26484378935048 ;
@@ -2347,6 +2582,7 @@
 <http://example/place/234>
     rdf:type schema:Place ;
     schema:name "TEO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1635642> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.81134657916308 ;
@@ -2357,6 +2593,7 @@
 <http://example/place/235>
     rdf:type schema:Place ;
     schema:name "TOEN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q943030> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.31758742554449 ;
@@ -2367,6 +2604,7 @@
 <http://example/place/236>
     rdf:type schema:Place ;
     schema:name "TOMINO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628263> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.01080483211141 ;
@@ -2377,6 +2615,7 @@
 <http://example/place/237>
     rdf:type schema:Place ;
     schema:name "TOQUES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q517889> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.97111823841762 ;
@@ -2387,6 +2626,7 @@
 <http://example/place/238>
     rdf:type schema:Place ;
     schema:name "TORDOIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q837056> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.1056834816302 ;
@@ -2397,6 +2637,7 @@
 <http://example/place/239>
     rdf:type schema:Place ;
     schema:name "TOURO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q904203> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.862027913784864 ;
@@ -2407,6 +2648,7 @@
 <http://example/place/240>
     rdf:type schema:Place ;
     schema:name "TRABADA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1447468> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.44577885568789 ;
@@ -2417,6 +2659,7 @@
 <http://example/place/241>
     rdf:type schema:Place ;
     schema:name "TRASMIRAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q917185> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.03203902608516 ;
@@ -2427,6 +2670,7 @@
 <http://example/place/242>
     rdf:type schema:Place ;
     schema:name "TRAZO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616102> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.02376079247874 ;
@@ -2437,6 +2681,7 @@
 <http://example/place/243>
     rdf:type schema:Place ;
     schema:name "TRIACASTELA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q636874> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.7681411499259 ;
@@ -2447,6 +2692,7 @@
 <http://example/place/244>
     rdf:type schema:Place ;
     schema:name "TUI" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q824122> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.09367267489639 ;
@@ -2457,6 +2703,7 @@
 <http://example/place/245>
     rdf:type schema:Place ;
     schema:name "VAL DO DUBRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1450828> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.03758659145401 ;
@@ -2467,6 +2714,7 @@
 <http://example/place/246>
     rdf:type schema:Place ;
     schema:name "VALDOVINO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q969030> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.58932641300895 ;
@@ -2477,6 +2725,7 @@
 <http://example/place/247>
     rdf:type schema:Place ;
     schema:name "VALGA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628179> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.66017006273579 ;
@@ -2487,6 +2736,7 @@
 <http://example/place/248>
     rdf:type schema:Place ;
     schema:name "VEDRA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616092> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.81797775859024 ;
@@ -2497,6 +2747,7 @@
 <http://example/place/249>
     rdf:type schema:Place ;
     schema:name "VEREA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628482> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.11533508097537 ;
@@ -2507,6 +2758,7 @@
 <http://example/place/250>
     rdf:type schema:Place ;
     schema:name "VERIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q176504> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.94199429449593 ;
@@ -2517,6 +2769,7 @@
 <http://example/place/251>
     rdf:type schema:Place ;
     schema:name "VIANA DO BOLO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627561> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.16494576398493 ;
@@ -2527,6 +2780,7 @@
 <http://example/place/252>
     rdf:type schema:Place ;
     schema:name "VIGO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8745> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.21763182242981 ;
@@ -2537,6 +2791,7 @@
 <http://example/place/253>
     rdf:type schema:Place ;
     schema:name "VILA DE CRUCES" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607479> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.794436716464354 ;
@@ -2547,6 +2802,7 @@
 <http://example/place/254>
     rdf:type schema:Place ;
     schema:name "VILABOA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q377426> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.348596744190914 ;
@@ -2557,6 +2813,7 @@
 <http://example/place/255>
     rdf:type schema:Place ;
     schema:name "VILAGARCIA DE AROUSA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442637> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.60970477867474 ;
@@ -2567,6 +2824,7 @@
 <http://example/place/256>
     rdf:type schema:Place ;
     schema:name "VILALBA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1605437> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.31668007621506 ;
@@ -2577,6 +2835,7 @@
 <http://example/place/257>
     rdf:type schema:Place ;
     schema:name "VILAMARIN" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1627625> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.47025440113254 ;
@@ -2587,6 +2846,7 @@
 <http://example/place/258>
     rdf:type schema:Place ;
     schema:name "VILAMARTIN DE VALDEORRAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1618272> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.45005553867116 ;
@@ -2597,6 +2857,7 @@
 <http://example/place/259>
     rdf:type schema:Place ;
     schema:name "VILANOVA DE AROUSA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q739495> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.54810814552999 ;
@@ -2607,6 +2868,7 @@
 <http://example/place/260>
     rdf:type schema:Place ;
     schema:name "VILAR DE BARRIO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q515061> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.20376245569299 ;
@@ -2617,6 +2879,7 @@
 <http://example/place/261>
     rdf:type schema:Place ;
     schema:name "VILAR DE SANTOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1643617> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.11002522078542 ;
@@ -2627,6 +2890,7 @@
 <http://example/place/262>
     rdf:type schema:Place ;
     schema:name "VILARDEVOS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1629581> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 41.92379218391965 ;
@@ -2637,6 +2901,7 @@
 <http://example/place/263>
     rdf:type schema:Place ;
     schema:name "VILARINO DE CONSO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1629552> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.17374624675603 ;
@@ -2647,6 +2912,7 @@
 <http://example/place/264>
     rdf:type schema:Place ;
     schema:name "VILARMAIOR" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q974227> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.35955806078304 ;
@@ -2657,6 +2923,7 @@
 <http://example/place/265>
     rdf:type schema:Place ;
     schema:name "VILASANTAR" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q340094> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.07444638554645 ;
@@ -2667,6 +2934,7 @@
 <http://example/place/266>
     rdf:type schema:Place ;
     schema:name "VIMIANZO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616162> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.10371617096632 ;
@@ -2677,6 +2945,7 @@
 <http://example/place/267>
     rdf:type schema:Place ;
     schema:name "VIVEIRO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q641221> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.61949243486916 ;
@@ -2687,6 +2956,7 @@
 <http://example/place/268>
     rdf:type schema:Place ;
     schema:name "XERMADE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q577144> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.36216145097018 ;
@@ -2697,6 +2967,7 @@
 <http://example/place/269>
     rdf:type schema:Place ;
     schema:name "XINZO DE LIMIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q918637> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.04059200871934 ;
@@ -2707,6 +2978,7 @@
 <http://example/place/270>
     rdf:type schema:Place ;
     schema:name "XOVE" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1111013> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.66922683615319 ;
@@ -2717,6 +2989,7 @@
 <http://example/place/271>
     rdf:type schema:Place ;
     schema:name "XUNQUEIRA DE AMBIA" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607462> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.17631377295263 ;
@@ -2727,6 +3000,7 @@
 <http://example/place/272>
     rdf:type schema:Place ;
     schema:name "XUNQUEIRA DE ESPADANEDO" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1596784> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 42.32826242556796 ;
@@ -2737,6 +3011,7 @@
 <http://example/place/273>
     rdf:type schema:Place ;
     schema:name "ZAS" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q148174> ;
     schema:geo [
         rdf:type schema:GeoCoordinates ;
         schema:latitude 43.079077107702645 ;

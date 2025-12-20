@@ -4,7 +4,7 @@
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](LICENSE)
 [![Asignatura](https://img.shields.io/badge/Asignatura-APD_2025-ff69b4)](https://www.ua.es/)
 
-Proyecto desarrollado para la asignatura **Adquisición y Preparación de Datos (APD)** del Grado en Ingeniería en Inteligencia Artificial de la Universidad de Alicante. Análisis integral de incendios forestales en Galicia mediante técnicas de procesamiento de datos, transformación RDF y visualización avanzada.
+Proyecto de carácter educativo desarrollado para la asignatura **Adquisición y Preparación de Datos (APD)** del Grado en Ingeniería en Inteligencia Artificial de la Universidad de Alicante. Análisis integral de incendios forestales en Galicia mediante técnicas de procesamiento de datos, transformación RDF y visualización avanzada.
 
 ## Descripción del Proyecto
 
@@ -31,35 +31,8 @@ Este proyecto aborda el **análisis predictivo de incendios forestales** en la c
 5. **Crear visualizaciones interactivas** para análisis exploratorio
 6. **Identificar patrones y factores de riesgo** para prevención de incendios
 
-## Estructura del Repositorio
 
-```
-Proyecto-Incendios-APD/
-├── data/                           # Datos crudos y procesados
-│   ├── raw/                       # Datos originales descargados
-│   ├── processed/                 # Datos limpios y transformados
-│   └── rdf/                       # Datos transformados a RDF
-├── docs/                          # Documentación del proyecto
-│   └── MEMORIA_AYPD.docx          # Memoria completa del proyecto
-├── etl/                           # Transformaciones Pentaho
-│   ├── transformations/           # Archivos .ktr de PDI
-│   ├── jobs/                      # Jobs de Pentaho
-│   └── scripts/                   # Scripts SQL y Python auxiliares
-├── database/                      # Esquemas de base de datos
-│   ├── diseño_conceptual.png      # Diagrama conceptual
-│   ├── diseño_logico.png          # Diagrama lógico
-│   └── esquema_fisico.sql         # Script SQL del diseño físico
-├── visualizations/                # Visualizaciones creadas
-│   ├── mapa_incendios.html        # Mapa interactivo de incendios
-│   └── analisis_temporal.html     # Análisis temporal de incendios
-├── src/                           # Código fuente adicional
-│   ├── rdf_generator.py           # Generador de tripletas RDF
-│   └── data_validation.py         # Validaciones de datos
-├── README.md                      # Este archivo
-└── LICENSE                        # Licencia MIT
-```
-
-## 🛠 Tecnologías y Herramientas
+## Tecnologías y Herramientas
 
 ### **Procesamiento de Datos**
 - Pentaho Data Integration - ETL principal
@@ -121,7 +94,6 @@ cd Proyecto-Incendios-APD
 
 ```
 
-
 ## Licencia
 
 Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
@@ -132,4 +104,4 @@ Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICE
 2. **Fuente de datos climáticos**: [Datosclima.es](https://datosclima.es/)
 3. **Vocabulario RDF**: [schema.org](https://schema.org/)
 4. **Herramienta ETL**: [Pentaho Data Integration](https://www.hitachivantara.com/en-us/products/data-management-analytics/pentaho-platform/data-integration.html)
-5. **Documentación técnica completa**: Disponible en `docs/MEMORIA_AYPD.docx`
+
